@@ -86,7 +86,7 @@ to undo the commit we can use git reset --soft to undo the act of the commit, bu
 
 ## Challenge 1: Git Tango
 
-::: Part 1
+::: challenge
 ### Part 1: 2 steps forward one step back
 
 Try creating a new file called git_tango.md
@@ -106,7 +106,7 @@ now unstage the file and confirm it again.
 
 :::
 
-:::: Part 2
+:::: challenge
 ### Part 2: 3 steps forward
 
 2. modify the file and add another instruction.
@@ -116,7 +116,7 @@ now unstage the file and confirm it again.
 
 ::::
 
-::::: Part 3
+::::: challenge
 ### Part 3: One step back
 modify the file and add an incorrect instruction.
    - use the commands to stage and commit the error.
@@ -124,7 +124,7 @@ modify the file and add an incorrect instruction.
    - undo the commit leaving modifications in the staging area
    - confirm the change
 :::::
-:::::: Part 4
+:::::: challenge
 ### Part 4: one step forward 2 steps back
 
    - commit again with a different message
@@ -132,13 +132,13 @@ modify the file and add an incorrect instruction.
    - undo the commit keeping modifcations but unstaged
    - confirm the change
 ::::::
-::::::: Part 5
+::::::: challenge
 ### Part 5: three more steps forward
    - correct the instruction in the file and add and commit it
    - confirm the change
 
 :::::::
-:::::::: Part 6
+:::::::: challenge
 ### Part 6: three steps back
 
    - completely undo the commit so its unchanged from 2.
