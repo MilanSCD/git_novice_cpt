@@ -30,7 +30,7 @@ $ cd ~/Desktop/recipes
 Let's create a file called `guacamole.md` that contains the basic structure of our first recipe.
 We'll use `nano` to edit the file;
 you can use whatever editor you like.
-In particular, this does not have to be the `core.editor` you set globally earlier. But remember, the steps to create or edit a new file will depend on the editor you choose (it might not be nano). For a refresher on text editors, check out ["Which Editor?"](https://swcarpentry.github.io/shell-novice/03-create.html#which-editor) in [The Unix Shell](https://swcarpentry.github.io/shell-novice/) lesson.
+For a refresher on text editors, check out ["Which Editor?"](https://swcarpentry.github.io/shell-novice/03-create.html#which-editor) in [The Unix Shell](https://swcarpentry.github.io/shell-novice/) lesson.
 
 ```bash
 $ nano guacamole.md
@@ -45,54 +45,6 @@ Type the text below into the `guacamole.md` file:
 ```
 
 Save the file and exit your editor.
-
-:::::::::::::::::::::::::::::::::::::::::  spoiler
-
-## Markdown
-
-Jimmy and Alfredo are using [Markdown](https://en.wikipedia.org/wiki/Markdown)
-to write their recipes. It is a simple plain-text format for writing lists,
-links and other things that might go into a web page.
-
-+---------------------------------------+------------------------------------------------+
-| Markdown code                         | Rendered output                                |
-+=======================================+================================================+
-+---------------------------------------+------------------------------------------------+
-| ```                                   | <p></p>                                        |
-| *   Use asterisks                     | -   Use asterisks                              |
-| *   to create                         | -   to create                                  |
-| *   bullet lists.                     | -   bullet lists.                              |
-| ```                                   |                                                |
-+---------------------------------------+------------------------------------------------+
-+---------------------------------------+------------------------------------------------+
-| ```                                   | <p></p>                                        |
-| 1.   Use numbers                      | 1.   Use numbers                               |
-| 1.   to create                        | 2.   to create                                 |
-| 1.   numbered lists.                  | 3.   numbered lists.                           |
-| ```                                   |                                                |
-+---------------------------------------+------------------------------------------------+
-+---------------------------------------+------------------------------------------------+
-| ```                                   | <p></p>                                        |
-| *  You can use indents                | - You can use indents                          |
-|   *  To create sublists               |   - To create sublists                         |
-|   *  of the same type                 |   - of the same type                           |
-| *  Or sublists                        | - Or sublists                                  |
-|   1. Of different                     |   1. Of different                              |
-|   1. types                            |   2. types                                     |
-| ```                                   |                                                |
-+---------------------------------------+------------------------------------------------+
-+---------------------------------------+------------------------------------------------+
-| ```                                   | <p></p>                                        |
-| # A Level-1 Heading                   | ## A Level-1 Heading                           |
-| ```                                   |                                                |
-+---------------------------------------+------------------------------------------------+
-+---------------------------------------+------------------------------------------------+
-| ```                                   | <p></p>                                        |
-| ## A Level-2 Heading (etc.)           | ### A Level-2 Heading (etc.)                   |
-| ```                                   |                                                |
-+---------------------------------------+------------------------------------------------+
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Let’s verify that the file was properly created by running the list command (`ls`):
 
