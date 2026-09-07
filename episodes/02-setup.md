@@ -119,14 +119,7 @@ configuration, the `init.defaultBranch` value defaults to `master`.
 The five commands we just ran above only need to be run once: the flag `--global` tells Git
 to use the settings for every project, in your user account, on this computer.
 
-Let's review those settings and test our `core.editor` right away:
-
-```bash
-$ git config --global --edit
-```
-
-Let's close the file without making any additional changes.  Remember, since typos in the config file will cause
-issues, it's safer to view the configuration with:
+Let's review those settings, its safe to view the configuration with:
 
 ```bash
 $ git config --list --global
