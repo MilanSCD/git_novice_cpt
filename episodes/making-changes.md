@@ -33,12 +33,16 @@ when we use git status, we can see which files are in each state.
 
 ![git state diagram. git commands which change the state are shown as arrows. commands used in the modify add commit cycle are shown with their inverses. Note that commands from the staged and commited states apply to all the files in that state unless specified.](fig/git_modify_add_commit_cycle_diagram.png)
 
+::::::::: callout
+### .gitignore
 Some files we never want to track. They could be files generated from tests or sensitive things we don't want to share. To keep them untracked, we lsit them in a `.gitignore` file, which tells git to ignore them. We usually create this file at the start of a repository and update it as we go along. When files which are listed in the `.gitignore` are modified, the changes won't be shown in `git status` and cannot be staged or committed unless forced with additional commands.
+:::::::::
 
 Making changes and tracking them in git follows a 3 step cycle:
 
 ### 1 Modify
 - make a change like making a new file or editing a paragraph
+- this may include multiple files
 
 ### 2 Add
 
@@ -54,14 +58,18 @@ Making changes and tracking them in git follows a 3 step cycle:
 - a message is added to describe the logical change from the previous point
 - the message is written as an imperative by convention eg. "add config file"
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: callout
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: discussion
+### Atomistic Commits
 The idea of this cycle is that we should only create commits (restore points) for a minimal set of modifications that constitute a single self consistent logical change. Each commit is saved as the modifications to or difference between the current commit and the previous one. Once we commit, the staged changes are now just part of the current version, so the staging area is empty. A copy of the commited version is saved in the .git directory.
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+### Git History
 
 We can then build up our project using this cycle with a new commit each time we make a logical change. Each commit is labelled with the commit message and a hash code that uniquely identifies it. This builds what we call the "history": the chain of commits which describe each step we took to get to the current version. We can view this history using the log.
 
 ![Simple git history. Each commit adds modifications to the last one. The branch "main" is just a label pointing to commit C4. "HEAD" is also just a label showing what is currently in the file system. We will see how we can add branches later.](fig/git_simple_history_diagram.png)
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 ## Undoing things
 
@@ -87,7 +95,7 @@ to undo the commit we can use git reset --soft to undo the act of the commit, bu
 ## Challenge 1: Git Tango
 
 
-**Part 1: 2 steps forward one step back**
+**Part 1: Two steps forward one step back**
 
 Try creating a new file called git_tango.md
 
@@ -104,12 +112,11 @@ confirm the change of state with `git status`
 
 now unstage the file and confirm it again.
 
+From this point, confirm each step using `git status` and `git log`
 
+**Part 2: Three steps forward**
 
-
-**Part 2: 3 steps forward**
-
-2. modify the file and add another instruction.
+modify the file and add another instruction.
    - use the commands to stage the new changes
    - commit staged changes
    - confirm the changes with `git status` and `git log`
@@ -122,25 +129,23 @@ modify the file and add an incorrect instruction.
    - use the commands to stage and commit the error.
    - confirm the error with with `git status` and `git log`
    - undo the commit leaving modifications in the staging area
-   - confirm the change
 
 
-**Part 4: one step forward 2 steps back**
 
-   - commit again with a different message
-   - confirm the change
+**Part 4: one step forward two steps back**
+rename the commit and then unstage it
+   - commit again with a different message 
    - undo the commit keeping modifcations but unstaged
-   - confirm the change
+
 
 **Part 5: three more steps forward**
-   - correct the instruction in the file and add and commit it
-   - confirm the change
+   correct the instruction in the file and add and commit it
+
 
 
 **Part 6: three steps back**
 
-   - completely undo the commit so its unchanged from 2.
-   -confirm the change.
+   - completely undo the commit so its unchanged from Part 2.
 
 
 :::::::::::::::::::::::: solution 
