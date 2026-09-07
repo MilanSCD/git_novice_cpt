@@ -23,7 +23,7 @@ exercises: 2
 ## Introduction
 
 Once we have our respoitory set up, we can start making use of gits tracking features. To start with we can use the git status command.
-Files tracked by git are either tracked or untracked.
+Files in the repository directory are either tracked or untracked.
 They are also unchanged relative to the last restore point (commit)
 or modified.
 
@@ -86,6 +86,9 @@ to undo the commit we can use git reset --soft to undo the act of the commit, bu
 
 ## Challenge 1: Git Tango
 
+::: Part 1
+### Part 1: 2 steps forward one step back
+
 Try creating a new file called git_tango.md
 
 1. type in instructions like:
@@ -97,61 +100,80 @@ two steps forward
 
 then use the git commands to track and stage the file.
 
-confirm the change of state with `git satus`
+confirm the change of state with `git status`
 
 now unstage the file and confirm it again.
+
+:::
+
+:::: Part 2
+### Part 2: 3 steps forward
 
 2. modify the file and add another instruction.
    - use the commands to stage the new changes
    - commit staged changes
    - confirm the changes with `git status` and `git log`
 
-3. modify the file and add an incorrect instruction.
+::::
+
+::::: Part 3
+### Part 3: One step back
+modify the file and add an incorrect instruction.
    - use the commands to stage and commit the error.
    - confirm the error with with `git status` and `git log`
    - undo the commit leaving modifications in the staging area
    - confirm the change
+::::: Part 4
+### Part 4: one step forward 2 steps back
 
-4. 
    - commit again with a different message
    - confirm the change
    - undo the commit keeping modifcations but unstaged
    - confirm the change
-
-5.
+:::::
+:::::: Part 5
+### Part 5: three more steps forward
    - correct the instruction in the file and add and commit it
    - confirm the change
 
-6.
+::::::
+::::::: Part 6
+### Part 6: three steps back
+
    - completely undo the commit so its unchanged from 2.
    -confirm the change.
 
-
+:::::::
 :::::::::::::::::::::::: solution 
-## part 1
+### part 1
 use the commands `git add <file>` to stage a file
 use `git status` to check it has been staged
 use `git restore --staged <file>` to unstage the file
 use `git status` to check it has been unstaged. 
-
-## part 2 
+::::::::::::::::::::::::
+:::::::::::::::::::::::: solution
+### part 2 
 
 modify the file then use `git add <file>` and `git commit -m "commit message"` to add a commit
 use `git status` and `git log` to check the commit has been added.
-
-## part 3
+::::::::::::::::::::::::
+:::::::::::::::::::::::: solution
+### part 3
 
 initially same as part 2
 then to inverse use `git reset --soft`
-
-## part 4
+::::::::::::::::::::::::
+:::::::::::::::::::::::: solution
+### part 4
 use `git commit -m "new commit message"`
 then to inverse and unstage `git reset --mixed`
-
-## part 5
+::::::::::::::::::::::::
+:::::::::::::::::::::::: solution
+### part 5
 same as part 2
-
-## part 6
+::::::::::::::::::::::::
+:::::::::::::::::::::::: solution
+### part 6
 use `git reset --hard`
 
 
