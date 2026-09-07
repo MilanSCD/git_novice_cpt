@@ -123,27 +123,28 @@ modify the file and add an incorrect instruction.
    - confirm the error with with `git status` and `git log`
    - undo the commit leaving modifications in the staging area
    - confirm the change
-::::: Part 4
+:::::
+:::::: Part 4
 ### Part 4: one step forward 2 steps back
 
    - commit again with a different message
    - confirm the change
    - undo the commit keeping modifcations but unstaged
    - confirm the change
-:::::
-:::::: Part 5
+::::::
+::::::: Part 5
 ### Part 5: three more steps forward
    - correct the instruction in the file and add and commit it
    - confirm the change
 
-::::::
-::::::: Part 6
+:::::::
+:::::::: Part 6
 ### Part 6: three steps back
 
    - completely undo the commit so its unchanged from 2.
    -confirm the change.
 
-:::::::
+::::::::
 :::::::::::::::::::::::: solution 
 ### part 1
 use the commands `git add <file>` to stage a file
