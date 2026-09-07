@@ -4,98 +4,165 @@ teaching: 10
 exercises: 2
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
+::::::::::::::::::::::::::::::::::::::: objectives
 
-- How do you write a lesson using R Markdown and `{sandpaper}`?
+- Go through the modify-add-commit cycle for one or more files.
+- Explain where information is stored at each stage of that cycle.
+- Distinguish between descriptive and non-descriptive commit messages.
 
-::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::: objectives
+:::::::::::::::::::::::::::::::::::::::: questions
 
-- Explain how to use markdown with the new lesson template
-- Demonstrate how to include pieces of code, figures, and nested challenge blocks
+- How do I record changes in Git?
+- How do I check the status of my version control repository?
+- How do I record notes about what changes I made and why?
 
-::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Introduction
 
-This is a lesson created via The Carpentries Workbench. It is written in
-[Pandoc-flavored Markdown][pandoc] for static files (with extension `.md`) and
-[R Markdown][r-markdown] for dynamic files that can render code into output
-(with extension `.Rmd`). Please refer to the [Introduction to The Carpentries
-Workbench][carpentries-workbench] for full documentation.
+Once we have our respoitory set up, we can start making use of gits tracking features. To start with we can use the git status command.
+Files tracked by git are either tracked or untracked.
+They are also unchanged relative to the last restore point (commit)
+or modified.
 
-What you need to know is that there are three sections required for a valid
-Carpentries lesson template:
+Modified files are themselves either unstaged, meaning they have not been marked to be included in the next restore point ("commit"), or "staged" meaning they will be included in the next commit.
 
- 1. `questions` are displayed at the beginning of the episode to prime the
-    learner for the content.
- 2. `objectives` are the learning objectives for an episode displayed with
-    the questions.
- 3. `keypoints` are displayed at the end of the episode to reinforce the
-    objectives.
+when we use git status, we can see which files are in each state.
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+![git state diagram. git commands which change the state are shown as arrows. commands used in the modify add commit cycle are shown with their inverses. Note that commands from the staged and commited states apply to all the files in that state unless specified.](fig/git_modify_add_commit_cycle_diagram.png)
 
-Inline instructor notes can help inform instructors of timing challenges
-associated with the lessons. They appear in the "Instructor View"
+Making changes and tracking them in git follows a 3 step cycle:
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+### 1 Modify
+- make a change like making a new file or editing a paragraph
+
+### 2 Add
+
+- tell git to bundle this modification as part of the next "save"
+- multiple modifications can be added to this
+- we call this bundle the "staging area". Files are "staged" if they are added
+
+### 3 Commit
+
+- tell git to save the set of modifications we previously added, and create a new restore point
+- a message is added to describe the change from the previous point
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: callout
+The idea of this cycle is that we should only create commits (restore points) for a minimal set of modifications that constitute a single self consistent logical change. Each commit is saved as the modifications or difference between the current commit and the previous one. Once we commit, the staged changes are now just part of the current version, so the staging area is empty. A copy of the commited version is saved in the .git directory.
+
+We can then build up our project using this cycle with a new commit each time we make a logical change. Each commit is labelled with the commit message and a hash code that uniquely identifies it. This builds what we call the "history": the chain of commits which describe each step we took to get to the current version. We can view this history using the log.
+
+![Simple git history. Each commit adds modifications to the last one. The branch "main" is just a label pointing to commit C4. "HEAD" is also just a label showing what is currently in the file system. We will see how we can add branches later.](fig/git_simple_history_diagram.png)
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+## Undoing things
+
+Making changes and creating commits can seem daunting at first. Its easy to mix up what files to add to a commit and mistakes happen all the time. We don't want these mistakes to also be saved indefinitely. The good news is that we can undo any of the steps in the cycle. 
+
+
+within the modify, add, commit cycle, we can undo a modification to a file by resetting it to the previous restore point:
+
+we can unstage a file while keeping the modification by doing git restore --staged --filename
+
+this moves the modification out of the staging area and back to unstaged changes.
+
+Finally if we are working locally we can undo the commit. This is called rewriting the history, and it is important that we only do this if the commit is local and hasn't been pushed to a remote, otherwise we risk permanently changing the history for everyone and affecting their work.
+
+to undo the commit we can use git reset --soft to undo the act of the commit, but keeping the staging area
+--mixed keeps the modifications but leaves them unstaged
+--hard undoes all the modifications and returns the state back to the previous commit.
+
+
 
 ::::::::::::::::::::::::::::::::::::: challenge 
 
-## Challenge 1: Can you do it?
+## Challenge 1: Git Tango
 
-What is the output of this command?
+Try creating a new file called git_tango.md
 
-```r
-paste("This", "new", "lesson", "looks", "good")
-```
+1. type in instructions like:
 
-:::::::::::::::::::::::: solution 
-
-## Output
- 
 ```output
-[1] "This new lesson looks good"
+# Git Tango
+two steps forward
 ```
 
-:::::::::::::::::::::::::::::::::
+then use the git commands to track and stage the file.
 
+confirm the change of state with `git satus`
 
-## Challenge 2: how do you nest solutions within challenge blocks?
+now unstage the file and confirm it again.
+
+2. modify the file and add another instruction.
+   - use the commands to stage the new changes
+   - commit staged changes
+   - confirm the changes with `git status` and `git log`
+
+3. modify the file and add an incorrect instruction.
+   - use the commands to stage and commit the error.
+   - confirm the error with with `git status` and `git log`
+   - undo the commit leaving modifications in the staging area
+   - confirm the change
+
+4. 
+   - commit again with a different message
+   - confirm the change
+   - undo the commit keeping modifcations but unstaged
+   - confirm the change
+
+5.
+   - correct the instruction in the file and add and commit it
+   - confirm the change
+
+6.
+   - completely undo the commit so its unchanged from 2.
+   -confirm the change.
+
 
 :::::::::::::::::::::::: solution 
+## part 1
+use the commands `git add <file>` to stage a file
+use `git status` to check it has been staged
+use `git restore --staged <file>` to unstage the file
+use `git status` to check it has been unstaged. 
 
-You can add a line with at least three colons and a `solution` tag.
+## part 2 
+
+modify the file then use `git add <file>` and `git commit -m "commit message"` to add a commit
+use `git status` and `git log` to check the commit has been added.
+
+## part 3
+
+initially same as part 2
+then to inverse use `git reset --soft`
+
+## part 4
+use `git commit -m "new commit message"`
+then to inverse and unstage `git reset --mixed`
+
+## part 5
+same as part 2
+
+## part 6
+use `git reset --hard`
+
 
 :::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Figures
 
-You can use pandoc markdown for static figures with the following syntax:
+Note that when using git reset to undo a commit, the same rule is applied to all the staged changes that were a part of that commit, similar to how a commit puts all the staged changes into a commit. This is different to how `git add <files>` and `git restore --staged <files>` apply to individual files. 
 
-`![optional caption that appears below the figure](figure url){alt='alt text for
-accessibility purposes'}`
 
-![You belong in The Carpentries!](https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg){alt='Blue Carpentries hex person logo with no text.'}
-
-## Math
-
-One of our episodes contains $\LaTeX$ equations when describing how to create
-dynamic reports with {knitr}, so we now use mathjax to describe this:
-
-`$\alpha = \dfrac{1}{(1 - \beta)^2}$` becomes: $\alpha = \dfrac{1}{(1 - \beta)^2}$
-
-Cool, right?
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
+- Check the current state using `git status` and `git log`
+- make self consistent logical changes with the modify add commit cycle
+- undo any part of this cycle using `git restore --staged` or `git reset --(soft, mixed, hard)` 
+
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
