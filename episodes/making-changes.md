@@ -35,7 +35,7 @@ when we use git status, we can see which files are in each state.
 
 ::::::::: callout
 ### .gitignore
-Some files we never want to track. They could be files generated from tests or sensitive things we don't want to share. To keep them untracked, we lsit them in a `.gitignore` file, which tells git to ignore them. We usually create this file at the start of a repository and update it as we go along. When files which are listed in the `.gitignore` are modified, the changes won't be shown in `git status` and cannot be staged or committed unless forced with additional commands.
+Some files we explicitly choose not to track. They could be files generated from tests or sensitive things we don't want to share. To keep them untracked, we list them in a `.gitignore` file, which tells git to ignore them. We usually create this file at the start of a repository and update it as we go along. When files which are listed in the `.gitignore` are modified, the changes won't be shown in `git status` and cannot be staged or committed unless forced with additional commands.
 :::::::::
 
 Making changes and tracking them in git follows a 3 step cycle:
@@ -76,18 +76,18 @@ We can then build up our project using this cycle with a new commit each time we
 Making changes and creating commits can seem daunting at first. Its easy to mix up what files to add to a commit and mistakes happen all the time. We don't want these mistakes to also be saved indefinitely. The good news is that we can undo any of the steps in the cycle. 
 
 
-within the modify, add, commit cycle, we can undo a modification to a file by resetting it to the previous restore point:
+within the modify, add, commit cycle, we can undo any state changes and inverse any command:
 
-we can unstage a file while keeping the modification by doing git restore --staged --filename
+we can undo modifications to a file and restore the version in the previous commit using `git restore <file>`
 
-this moves the modification out of the staging area and back to unstaged changes.
+we can unstage a file from the staging area while keeping the modification in the file system by doing `git restore --staged <file>`
 
 Finally if we are working locally we can undo the commit. This is called rewriting the history, and it is important that we only do this if the commit is local and hasn't been pushed to a remote, otherwise we risk permanently changing the history for everyone and affecting their work.
 
-to undo the commit we can use git reset --soft to undo the act of the commit, but keeping the staging area
---mixed keeps the modifications but leaves them unstaged
---hard undoes all the modifications and returns the state back to the previous commit.
-
+To undo the commit we can use `git reset` with additional flags:
+- `--soft` to undo the act of the commit and keeps the staged modifications
+- `--mixed` keeps the modifications but leaves them unstaged
+- `--hard` undoes all the modifications and returns the state back to the previous commit.
 
 
 ::::::::::::::::::::::::::::::::::::: challenge 
@@ -117,35 +117,38 @@ From this point, confirm each step using `git status` and `git log`
 **Part 2: Three steps forward**
 
 modify the file and add another instruction.
-   - use the commands to stage the new changes
-   - commit staged changes
-   - confirm the changes with `git status` and `git log`
+- use the commands to stage the new changes
+- commit staged changes
+- confirm the changes with `git status` and `git log`
 
 
 
 
 **Part 3: One step back**
+
 modify the file and add an incorrect instruction.
-   - use the commands to stage and commit the error.
-   - confirm the error with with `git status` and `git log`
-   - undo the commit leaving modifications in the staging area
+- use the commands to stage and commit the error.
+- confirm the error with with `git status` and `git log`
+- undo the commit leaving modifications in the staging area
 
 
 
 **Part 4: one step forward two steps back**
+
 rename the commit and then unstage it
-   - commit again with a different message 
-   - undo the commit keeping modifcations but unstaged
+- commit again with a different message 
+- undo the commit keeping modifcations but unstaged
 
 
 **Part 5: three more steps forward**
-   correct the instruction in the file and add and commit it
+
+correct the instruction in the file and add and commit it
 
 
 
 **Part 6: three steps back**
 
-   - completely undo the commit so its unchanged from Part 2.
+completely undo the commit so its unchanged from Part 2.
 
 
 :::::::::::::::::::::::: solution 
