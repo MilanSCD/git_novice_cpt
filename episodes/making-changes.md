@@ -85,8 +85,11 @@ we can unstage a file from the staging area while keeping the modification in th
 Finally if we are working locally we can undo the commit. This is called rewriting the history, and it is important that we only do this if the commit is local and hasn't been pushed to a remote, otherwise we risk permanently changing the history for everyone and affecting their work.
 
 To undo the commit we can use `git reset` with additional flags:
+
 - `--soft` to undo the act of the commit and keeps the staged modifications
+
 - `--mixed` keeps the modifications but leaves them unstaged
+
 - `--hard` undoes all the modifications and returns the state back to the previous commit.
 
 
@@ -97,9 +100,9 @@ To undo the commit we can use `git reset` with additional flags:
 
 **Part 1: Two steps forward one step back**
 
-Try creating a new file called git_tango.md
+Try creating a new file called `git_tango.md`
 
-1. type in instructions like:
+type in instructions like:
 
 ```output
 # Git Tango
@@ -117,8 +120,11 @@ From this point, confirm each step using `git status` and `git log`
 **Part 2: Three steps forward**
 
 modify the file and add another instruction.
+
 - use the commands to stage the new changes
+
 - commit staged changes
+
 - confirm the changes with `git status` and `git log`
 
 
@@ -127,8 +133,11 @@ modify the file and add another instruction.
 **Part 3: One step back**
 
 modify the file and add an incorrect instruction.
+
 - use the commands to stage and commit the error.
+
 - confirm the error with with `git status` and `git log`
+
 - undo the commit leaving modifications in the staging area
 
 
@@ -136,7 +145,9 @@ modify the file and add an incorrect instruction.
 **Part 4: one step forward two steps back**
 
 rename the commit and then unstage it
+
 - commit again with a different message 
+
 - undo the commit keeping modifcations but unstaged
 
 
