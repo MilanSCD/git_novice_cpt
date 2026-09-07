@@ -8,7 +8,13 @@
 # lc: Library Carpentry
 # cp: Carpentries (to use for instructor training for instance)
 # incubator: The Carpentries Incubator
+# Note that you can also use a custom carpentry type. For more info,
+# see the documentation: https://carpentries.github.io/sandpaper-docs/editing.html
 carpentry: 'swc'
+
+# Custom carpentry description
+# This will be used as the alt text for the logo
+# carpentry_description: "Custom Carpentry"
 
 # Overall title for pages.
 title: 'Version Control with Git'
@@ -20,6 +26,7 @@ created: '2014-12-04'
 keywords: 'software, data, lesson, The Carpentries'
 
 # Life cycle stage of the lesson
+# refer to <https://docs.carpentries.org/resources/curriculum/lesson-life-cycle.html> for details
 # possible values: pre-alpha, alpha, beta, stable
 life_cycle: 'stable'
 
@@ -62,6 +69,7 @@ episodes:
 - 01-basics.md
 - 02-setup.md
 - 03-create.md
+- making-changes.md
 - 04-changes.md
 - 05-history.md
 - 06-ignore.md
@@ -89,6 +97,6 @@ profiles:
 # sandpaper and varnish versions) should live
 
 
-url: 'https://swcarpentry.github.io/git-novice'
+url: https://swcarpentry.github.io/git-novice
 analytics: carpentries
 lang: en
