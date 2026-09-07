@@ -156,7 +156,7 @@ use `git reset --hard`
 
 
 :::::::::::::::::::::::::::::::::
-
+:::::::::::::::::::::::::::::::::::::::::
 
 Note that when using git reset to undo a commit, the same rule is applied to all the staged changes that were a part of that commit, similar to how a commit puts all the staged changes into a commit. This is different to how `git add <files>` and `git restore --staged <files>` apply to individual files. 
 
