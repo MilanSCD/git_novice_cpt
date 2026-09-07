@@ -33,6 +33,8 @@ when we use git status, we can see which files are in each state.
 
 ![git state diagram. git commands which change the state are shown as arrows. commands used in the modify add commit cycle are shown with their inverses. Note that commands from the staged and commited states apply to all the files in that state unless specified.](fig/git_modify_add_commit_cycle_diagram.png)
 
+Some files we never want to track. They could be files generated from tests or sensitive things we don't want to share. To keep them untracked, we lsit them in a `.gitignore` file, which tells git to ignore them. We usually create this file at the start of a repository and update it as we go along. When files which are listed in the `.gitignore` are modified, the changes won't be shown in `git status` and cannot be staged or committed unless forced with additional commands.
+
 Making changes and tracking them in git follows a 3 step cycle:
 
 ### 1 Modify
@@ -41,16 +43,19 @@ Making changes and tracking them in git follows a 3 step cycle:
 ### 2 Add
 
 - tell git to bundle this modification as part of the next "save"
-- multiple modifications can be added to this
+- multiple modifications or files can be added to this
 - we call this bundle the "staging area". Files are "staged" if they are added
+- only staged modifications can be part of a commit
+   - if a file has been modified after it has been staged, the new modification has to be staged again to be included.
 
 ### 3 Commit
 
-- tell git to save the set of modifications we previously added, and create a new restore point
-- a message is added to describe the change from the previous point
+- tell git to save the set of modifications we previously added, and create a new restore point ("commit")
+- a message is added to describe the logical change from the previous point
+- the message is written as an imperative by convention eg. "add config file"
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: callout
-The idea of this cycle is that we should only create commits (restore points) for a minimal set of modifications that constitute a single self consistent logical change. Each commit is saved as the modifications or difference between the current commit and the previous one. Once we commit, the staged changes are now just part of the current version, so the staging area is empty. A copy of the commited version is saved in the .git directory.
+The idea of this cycle is that we should only create commits (restore points) for a minimal set of modifications that constitute a single self consistent logical change. Each commit is saved as the modifications to or difference between the current commit and the previous one. Once we commit, the staged changes are now just part of the current version, so the staging area is empty. A copy of the commited version is saved in the .git directory.
 
 We can then build up our project using this cycle with a new commit each time we make a logical change. Each commit is labelled with the commit message and a hash code that uniquely identifies it. This builds what we call the "history": the chain of commits which describe each step we took to get to the current version. We can view this history using the log.
 
