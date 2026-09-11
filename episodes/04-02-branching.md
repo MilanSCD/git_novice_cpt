@@ -133,7 +133,7 @@ gitGraph
 
 ::::::::::::::::::::::::::::::::::::::::: callout
 
-## Checkout, switch and restore
+## Checkout and switch
 
 Historically, Git used the command:
 
@@ -155,7 +155,7 @@ for moving between branches, and
 $ git restore
 ```
 
-for restoring file contents.
+for restoring file contents (you saw this earlier).
 
 You will still see `git checkout` in older tutorials and online discussions.
 
@@ -192,20 +192,6 @@ gitGraph
 This demonstrates an important idea:
 
 > Branches allow us to isolate work until it is ready.
-
-::::::::::::::::::::::::::::::::::::::::: callout
-
-## Restoring a file
-
-If you edit a file and want to discard the changes:
-
-```bash
-$ git restore brownies.md
-```
-
-This restores the file to the version stored in the current commit.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Merging Branches
 
@@ -572,7 +558,6 @@ Inspect the history and confirm that the merge has been removed.
 - `HEAD` represents the current location in repository history.
 - `git branch` lists and creates branches.
 - `git switch` changes branches.
-- `git restore` restores file contents.
 - `git merge` combines histories.
 - `git rebase` replays commits onto a newer base.
 - `git stash` temporarily stores unfinished work.
