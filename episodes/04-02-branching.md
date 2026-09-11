@@ -7,7 +7,7 @@ exercises: 30
 ::::::::::::::::::::::::::::::::::::::: objectives
 
 - Create and switch between branches.
-- Explain the purpose of `HEAD`.
+- Reinforce the purpose of `HEAD`.
 - Merge changes from one branch into another.
 - Use stashes to move unfinished work between branches.
 - Resolve simple merge conflicts.
