@@ -431,38 +431,6 @@ before changes are merged.
 
 ::::::::::::::::::::::::::::::::::::::: challenge
 
-## Mind Reading
-
-Find a partner.
-
-1. Clone the tutorial repository.
-2. Create a repository in your own GitHub account.
-3. Update `origin` so it points to your repository.
-4. Answer the supplied question in `answer.md`.
-5. Stage, commit, and push your answer.
-
-Now switch roles:
-
-6. Clone your partner's repository.
-7. Read their answer.
-8. Create `response.md` explaining what you think they meant.
-9. Commit and push your response.
-
-Return to your own repository:
-
-10. Pull your partner's response.
-11. Compare it with your original answer.
-12. Confirm whether they understood correctly.
-
-Finally:
-
-13. Create a file called `secret-answer.txt`.
-14. Use a `.gitignore` file so your partner never receives it.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::: challenge
-
 ## Commit to the Bit
 
 Your instructor will provide a list of independent changes.
