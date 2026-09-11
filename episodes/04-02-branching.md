@@ -226,57 +226,6 @@ After merging, the feature branch can be deleted:
 $ git branch -d feature
 ```
 
-::::::::::::::::::::::::::::::::::::::::: callout
-
-## Rebasing
-
-Another way to combine histories is **rebase**.
-
-Imagine someone adds commits to `main` while you are working on a feature
-branch.
-
-Instead of merging, you can replay your commits on top of the latest version
-of `main`:
-
-```bash
-$ git rebase main
-```
-
-Before rebasing:
-
-```mermaid
-gitGraph
-    commit id: "Initial"
-    branch feature
-    checkout feature
-    commit id: "Feature work"
-    checkout main
-    commit id: "Hotfix"
-```
-
-After:
-
-```mermaid
-gitGraph
-    commit id: "Initial"
-    commit id: "Hotfix"
-    branch feature
-    checkout feature
-    commit id: "Feature work"
-```
-``
-
-A useful way to think about rebase is:
-
-> Merge joins two histories together. Rebase rewrites your branch so it looks like it started from a newer commit.
-
-Many teams prefer feature branches to be rebased before they are merged because
-this can produce a cleaner history.
-
-If you are unsure whether to merge or rebase, use merge as you are less likely to accidentally lose work that way.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
 ## Stashing Unfinished Work
 
 Sometimes you realise you're working on the wrong branch.
