@@ -50,7 +50,7 @@ Git keeps track of the history of a branch by using the *reflog*.
 
 ::::::::::::::::::::::::::::::::::::::::: callout
 
-## HEAD
+## Reminder: HEAD
 
 Git keeps track of where you currently are using a special reference called
 `HEAD`.
