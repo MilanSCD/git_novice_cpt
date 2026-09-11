@@ -536,7 +536,7 @@ $ git merge --abort
 
 Repeat the merge.
 
-This time resolve the conflict using the JupyterHub merge editor.
+This time resolve the conflict using the JupyterHub merge editor (or indeed the merge editor in your code editor of choice).
 
 Complete the merge.
 
