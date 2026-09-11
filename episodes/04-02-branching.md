@@ -444,12 +444,15 @@ Examples might include:
 - adding serving sizes
 - adding additional recipes
 
-Complete as many changes as possible.
+Between you and your partner, decide who will do what changes.
+Complete as many changes as possible, with each person having their own branch for their changes.
 
-1. Create a feature branch.
-2. Push it to GitHub.
+1. Create a feature branch for each person.
+2. Push them to GitHub.
 3. Commit changes in logical units.
-4. Merge the branch into `main`.
+4. Push the changes to GitHub.
+4. Merge the branches into `main` using GitHub pull requests.
+5. Pull the changes from main into your local machine.
 
 Try to create commits that tell a clear story of your work.
 
