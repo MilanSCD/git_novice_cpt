@@ -225,7 +225,7 @@ After merging, the feature branch can be deleted:
 ```bash
 $ git branch -d feature
 ```
-
+::::callout
 ## Stashing Unfinished Work
 
 Sometimes you realise you're working on the wrong branch.
@@ -376,7 +376,7 @@ gitGraph
 Pull Requests provide a place for discussion, review, and automated testing
 before changes are merged.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 ::::::::::::::::::::::::::::::::::::::: challenge
 
