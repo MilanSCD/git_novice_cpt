@@ -24,8 +24,7 @@ Systems like Git allow us to move work between any two repositories.  In
 practice, though, it's easiest to use one copy as a central hub, and to keep it
 on the web rather than on someone's laptop.  Most programmers use hosting
 services like [GitHub](https://github.com), [Bitbucket](https://bitbucket.org) or
-[GitLab](https://gitlab.com/) to hold those main copies; we'll explore the pros
-and cons of this in a [later episode](13-hosting.md).
+[GitLab](https://gitlab.com/) to hold those main copies.
 
 Let's start by sharing the changes we've made to our current project with the
 world. To this end we are going to create a *remote* repository that will be linked to our *local* repository.
@@ -59,7 +58,7 @@ $ cd recipes
 $ git init
 ```
 
-If you remember back to the earlier [episode](04-changes.md) where we added and
+If you remember back to the earlier [episode](03-01-changes.md) where we added and
 committed our earlier work on `guacamole.md`, we had a diagram of the local repository
 which looked like this:
 
