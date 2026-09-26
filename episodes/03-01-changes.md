@@ -24,8 +24,16 @@ exercises: 2
 
 Once we have our respoitory set up, we can start making use of gits tracking features. To start with we can use the git status command.
 Files in the repository directory are either tracked or untracked.
-They are also unchanged relative to the last restore point (commit)
-or modified.
+
+### Tracked and untracked files
+
+Untracked files are files in the directory which have not yet been added to the git repository.
+Git is aware of them: they will show up as untracked in a `git status` output. However git will not be able to track changes in these files.
+
+Tracked files are files which have been added to the repository. Git will check to see if these files have been modified relative to the last commit (restore point)
+Files only have to be committed once to be tracked from that point onwards.
+
+### Modified files
 
 Modified files are themselves either unstaged, meaning they have not been marked to be included in the next restore point ("commit"), or "staged" meaning they will be included in the next commit.
 
@@ -45,10 +53,10 @@ Making changes and tracking them in git follows a 3 step cycle:
 - this may include multiple files
 
 ### 2 Add
-
+- done through `git add <file>`
 - tell git to bundle this modification as part of the next "save"
 - multiple modifications or files can be added to this
-- we call this bundle the "staging area". Files are "staged" if they are added
+- we call this bundle the "staging area". Files are "staged" if they are added 
 - only staged modifications can be part of a commit
    - if a file has been modified after it has been staged, the new modification has to be staged again to be included.
 
@@ -196,16 +204,24 @@ use `git reset --hard`
 
 
 :::::::::::::::::::::::::::::::::
+
 :::::::::::::::::::::::::::::::::::::::::
 
 Note that when using git reset to undo a commit, the same rule is applied to all the staged changes that were a part of that commit, similar to how a commit puts all the staged changes into a commit. This is different to how `git add <files>` and `git restore --staged <files>` apply to individual files. 
 
+Now that you are familiar with making commits, try to add a few steps to this recipe in separate commits.
+Remember to make single logical changes each time and use a descriptive commit message.
+
+Finally use `git log` to see your history and commit messages.
+Compare your log with someone else's and see if you can follow the changes they made.
+Hopefully this will highlight the importance of single logical changes and accurate, concise commit messages!
 
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
 - Check the current state using `git status` and `git log`
 - make self consistent logical changes with the modify add commit cycle
+- use concise accurate commit messages to help you follow your process
 - undo any part of this cycle using `git restore --staged` or `git reset --(soft, mixed, hard)` 
 
 
