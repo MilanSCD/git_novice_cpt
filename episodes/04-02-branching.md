@@ -411,7 +411,7 @@ Others may focus on completing a single feature branch from start to finish.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::::: challenge
+:::::::::::::::::::::::::::::::::::::::challenge
 
 ## Stashing and Conflicts
 

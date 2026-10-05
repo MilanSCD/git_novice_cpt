@@ -68,6 +68,7 @@ contact: 'team@carpentries.org'
 episodes: 
 - 01-01-basics.md
 - 02-01-setup.md
+- 02-01-01-ssh_setup.md
 - 02-02-create.md
 - 03-01-changes.md
 - 03-02-backup.md
