@@ -26,7 +26,7 @@ identifiers. Git also provides a special identifier called `HEAD`, which refers 
 
 We can use `HEAD` together with commands we already know to examine our project’s history.
 
-Before we start, let's make a change to our recipes. For example `guacamole.md` so we have something
+Before we start, let's make a change to our recipes. For example, `guacamole.md` so we have something
 to compare. We won’t save this change yet.
 
 ```bash
@@ -91,7 +91,7 @@ index df0654a..b36abfd 100644
  ## Instructions
 ```
 
-We could also use `git show` which shows us what changes we made at an older commit as
+We could also use `git show`, which shows us what changes we made at an older commit as
 well as the commit message, rather than the *differences* between a commit and our
 working directory that we see by using `git diff`.
 
@@ -157,7 +157,7 @@ index df0654a..93a3e13 100644
 
 That's the right answer,
 but typing out random 40-character strings is annoying,
-so Git lets us use just the first few characters (typically seven for normal size projects):
+so Git lets us use just the first few characters (typically seven for normal-size projects):
 
 ```bash
 $ git diff f22b25e
@@ -219,7 +219,7 @@ By default,
 it recovers the version of the file recorded in `HEAD`,
 which is the last saved commit.
 If we want to go back even further,
-we can use a commit identifier instead, using `-s` option:
+we can use a commit identifier instead, using the `-s` option:
 
 ```bash
 $ git restore -s f22b25e guacamole.md
@@ -251,7 +251,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
 Notice that the changes are not currently in the staging area, and have not been committed. 
-If we wished, we can put things back the way they were at the last commit by using `git restore` to overwrite
+If we wished, we could put things back the way they were at the last commit by using `git restore` to overwrite
 the working copy with the last committed version:
 
 ```bash
@@ -286,7 +286,7 @@ here's how Git works in cartoon form:
 
 The fact that files can be reverted one by one
 tends to change the way people organize their work.
-If everything is in one large document,
+For example, in a thesis, if everything is in one large document,
 it's hard (but not impossible) to undo changes to the introduction
 without also undoing changes made later to the conclusion.
 If the introduction and conclusion are stored in separate files,
@@ -297,21 +297,15 @@ moving backward and forward in time becomes much easier.
 
 ## Recovering Older Versions of a File
 
-Jennifer has made changes to the Python script that she has been working on for weeks, and the
-modifications she made this morning "broke" the script and it no longer runs. She has spent
-\~ 1hr trying to fix it, with no luck...
-
-Luckily, she has been keeping track of her project's versions using Git! Which commands below will
-let her recover the last committed version of her Python script called
-`data_cruncher.py`?
+If someone let us cook and we went way overboard with our new versions of `Method.md`. How would we recover older versions of our recipe?
 
 1. `$ git restore`
 
-2. `$ git restore data_cruncher.py`
+2. `$ git restore Method.md`
 
-3. `$ git restore -s HEAD~1 data_cruncher.py`
+3. `$ git restore -s HEAD~1 Method.md`
 
-4. `$ git restore -s <unique ID of last commit> data_cruncher.py`
+4. `$ git restore -s <unique ID of last commit> Method.md`
 
 5. Both 2 and 4
 
@@ -323,10 +317,10 @@ The answer is (5)-Both 2 and 4.
 
 The `restore` command restores files from the repository, overwriting the files in your working
 directory. Answers 2 and 4 both restore the *latest* version *in the repository* of the file
-`data_cruncher.py`. Answer 2 uses `HEAD` to indicate the *latest*, whereas answer 4 uses the
+`Method.md`. Answer 2 uses `HEAD` to indicate the *latest*, whereas answer 4 uses the
 unique ID of the last commit, which is what `HEAD` means.
 
-Answer 3 gets the version of `data_cruncher.py` from the commit *before* `HEAD`, which is NOT
+Answer 3 gets the version of `Method.md` from the commit *before* `HEAD`, which is NOT
 what we wanted.
 
 Answer 1 results in an error. You need to specify a file to restore. If you want to restore all files
@@ -338,49 +332,6 @@ you should use `git restore .`
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## Reverting a Commit
-
-Jennifer is collaborating with colleagues on her Python script.  She
-realizes her last commit to the project's repository contained an error, and
-wants to undo it.  Jennifer wants to undo correctly so everyone in the project's
-repository gets the correct change. The command `git revert [erroneous commit ID]` will create a
-new commit that reverses the erroneous commit.
-
-The command `git revert` is
-different from `git restore -s [commit ID] .` because `git restore` returns the
-files not yet committed within the local repository to a previous state, whereas `git revert`
-reverses changes committed to the local and project repositories.
-
-Below are the right steps and explanations for Jennifer to use `git revert`,
-what is the missing command?
-
-1. `________ # Look at the git history of the project to find the commit ID`
-
-2. Copy the ID (the first few characters of the ID, e.g. 0b1d055).
-
-3. `git revert [commit ID]`
-
-4. Type in the new commit message.
-
-5. Save and close.
-
-:::::::::::::::  solution
-
-## Solution
-
-The command `git log` lists project history with commit IDs.
-
-The command `git show HEAD` shows changes made at the latest commit, and lists
-the commit ID; however, Jennifer should double-check it is the correct commit, and no one
-else has committed changes to the repository.
-
-
-
-:::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -442,7 +393,7 @@ I like tomatoes, therefore I like ketchup
 
 ## Checking Understanding of `git diff`
 
-Consider this command: `git diff HEAD~9 `. What do you predict this command
+Consider this command: `git diff HEAD~9`. What do you predict this command
 will do if you execute it? What happens when you do execute it? Why?
 
 Try another command, `git diff [ID]`, where [ID] is replaced with the unique identifier for your most recent commit. What do you think will happen, and what does happen?
@@ -463,7 +414,7 @@ then use `git restore` to see if you can remove your change.
 
 ## Solution
 
-After adding a change, `git restore` can not be used directly.
+After adding a change, `git restore` cannot be used directly.
 Let's look at the output of `git status`:
 
 ```output
@@ -498,7 +449,7 @@ $ git status
 On branch main
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
-  (use "git git restore <file>..." to discard changes in working directory)
+  (use "git restore <file>..." to discard changes in working directory)
         modified:   guacamole.md
 
 no changes added to commit (use "git add" and/or "git commit -a")
@@ -543,7 +494,7 @@ $ git log guacamole.md
 Unfortunately some of these commit messages are very ambiguous, e.g., `update files`.
 How can you search through these files?
 
-Both `git diff` and `git log` are very useful and they summarize a different part of the history
+ `git diff` and `git log` each summarize a different part of the history
 for you.
 Is it possible to combine both? Let's try the following:
 
@@ -563,8 +514,8 @@ $ git log --patch HEAD~9 *.md
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
-
-- `git diff` displays differences between commits.
-- `git restore` recovers old versions of files.
+- The HEAD labels the currently checked out commit and we can refer to previous commits using `~N`
+- `git diff` and `git show` display differences between commits.
+- `git restore` recovers previous versions of files.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
