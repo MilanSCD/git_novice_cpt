@@ -409,7 +409,13 @@ Fast learners may complete many small commits.
 
 Others may focus on completing a single feature branch from start to finish.
 
+:::solution
+
+:::
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 
 :::::::::::::::::::::::::::::::::::::::challenge
 
@@ -469,6 +475,9 @@ $ git reset --hard HEAD~1
 ```
 
 Inspect the history and confirm that the merge has been removed.
+
+:::solution
+:::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
