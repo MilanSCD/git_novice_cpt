@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1760 1460" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1760" height="1460" fill="#f7f7f9"/>
+
+  <defs>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-magenta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#db2777"/>
+    </marker>
+  </defs>
+
+  <!-- title -->
+  <text x="880" y="55" text-anchor="middle" font-size="36" font-weight="700" fill="#1f2937">After: git restore --staged &lt;file&gt;</text>
+
+  <!-- mini history: HEAD/main stay exactly where they were, nothing is undone -->
+  <rect x="665" y="90" width="200" height="80" rx="12" fill="#f5f0ff" stroke="#7c3aed" stroke-width="4"/>
+  <text x="765" y="140" text-anchor="middle" font-size="28" font-weight="700" fill="#5b21b6">HEAD</text>
+  <line x1="765" y1="170" x2="765" y2="210" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrow-purple)"/>
+
+  <rect x="665" y="215" width="200" height="80" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="4"/>
+  <text x="765" y="262" text-anchor="middle" font-size="28" font-weight="700" fill="#15803d">main</text>
+  <line x1="765" y1="295" x2="765" y2="315" stroke="#16a34a" stroke-width="4" marker-end="url(#arrow-green)"/>
+
+  <circle cx="765" cy="390" r="70" fill="#d9e9fb" stroke="#2f6fde" stroke-width="5"/>
+  <text x="765" y="398" text-anchor="middle" font-size="28" font-weight="700" fill="#1f2937">C4</text>
+  <text x="765" y="495" text-anchor="middle" font-size="20" fill="#374151">(HEAD &#8594; main, unchanged)</text>
+
+  <!-- File System -->
+  <rect x="40" y="640" width="1680" height="780" rx="24" fill="#eef0f2" stroke="#6b7280" stroke-width="4"/>
+  <text x="80" y="705" font-size="40" font-weight="700" fill="#1f2937">File System</text>
+
+  <rect x="100" y="760" width="750" height="620" rx="20" fill="#eef2ff" stroke="#4b5563" stroke-width="4"/>
+  <text x="140" y="815" font-size="28" font-weight="700" fill="#374151">Git Repository (.git)</text>
+
+  <rect x="910" y="760" width="750" height="620" rx="20" fill="#ffffff" stroke="#4b5563" stroke-width="4"/>
+  <text x="950" y="815" font-size="28" font-weight="700" fill="#374151">Working Directory</text>
+
+  <!-- HEAD -->
+  <rect x="195" y="870" width="560" height="160" rx="16" fill="#f5f0ff" stroke="#7c3aed" stroke-width="5"/>
+  <text x="475" y="945" text-anchor="middle" font-size="38" font-weight="700" fill="#5b21b6">HEAD</text>
+  <text x="475" y="988" text-anchor="middle" font-size="22" fill="#5b21b6">(points at C4)</text>
+
+  <!-- Staged changes: the file's index entry is reset back to match HEAD -->
+  <rect x="195" y="1080" width="560" height="160" rx="16" fill="#eef5ff" stroke="#2f6fde" stroke-width="5" stroke-dasharray="14,10"/>
+  <text x="475" y="1155" text-anchor="middle" font-size="34" font-weight="700" fill="#1f2937">Staged Changes</text>
+  <text x="475" y="1198" text-anchor="middle" font-size="22" fill="#374151">(empty &#8212; matches HEAD)</text>
+
+  <!-- Unstaged changes: the file's modifications are kept, just no longer staged -->
+  <rect x="1005" y="870" width="560" height="160" rx="16" fill="#fff7ed" stroke="#d97706" stroke-width="5" stroke-dasharray="14,10"/>
+  <text x="1285" y="945" text-anchor="middle" font-size="32" font-weight="700" fill="#92400e">Unstaged Changes</text>
+  <text x="1285" y="988" text-anchor="middle" font-size="22" fill="#92400e">contains &lt;file&gt;'s changes</text>
+
+  <!-- Untracked files: unaffected -->
+  <rect x="1005" y="1080" width="560" height="160" rx="16" fill="#f3f4f6" stroke="#9ca3af" stroke-width="5" stroke-dasharray="14,10"/>
+  <text x="1285" y="1155" text-anchor="middle" font-size="34" font-weight="700" fill="#374151">Untracked Files</text>
+  <text x="1285" y="1198" text-anchor="middle" font-size="22" fill="#4b5563">(unaffected)</text>
+
+  <!-- the file's changes move from staged back to unstaged (drawn last so it layers above the File System box) -->
+  <circle cx="755" cy="1160" r="7" fill="#db2777"/>
+  <path d="M755,1160 L880,1160 L880,700 L1285,700 L1285,870" fill="none" stroke="#db2777" stroke-width="4" stroke-dasharray="12,9" marker-end="url(#arrow-magenta)"/>
+  <rect x="968" y="675" width="230" height="50" rx="10" fill="#ffffff" opacity="0.9" stroke="#db2777" stroke-width="2"/>
+  <text x="1083" y="708" text-anchor="middle" font-size="24" font-weight="700" fill="#db2777">&lt;file&gt; unstaged</text>
+</svg>
