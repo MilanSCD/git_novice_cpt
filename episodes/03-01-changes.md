@@ -52,21 +52,21 @@ Some files we explicitly choose not to track. They could be files generated from
 Making changes and tracking them in Git follows a 3-step cycle:
 
 ### 1 Modify
-- make a change like making a new file or editing a paragraph
-- this may include multiple files
+- make a change like making a new file or editing a paragraph.
+- this may include multiple files.
 
 ### 2 Add
-- tell Git to bundle this modification as part of the next "save"
-- multiple modifications or files can be added to this
-- we call this bundle the "staging area". Files are "staged" using the `git add <file>` command
-- only staged modifications can be part of a commit
+- tell Git to bundle this modification as part of the next "save".
+- multiple modifications or files can be added to this.
+- we call this bundle the "staging area". Files are "staged" using the `git add <file>` command.
+- only staged modifications can be part of a commit.
 - if a file has been modified after it has been staged, the new modification has to be staged again to be included.
 
 ### 3 Commit
 
-- tell Git to save the set of modifications we previously added, and create a new restore point ("commit")
-- a message is added to describe the logical change from the previous point
-- the message is written as an imperative by convention eg. `git commit -m "add config file"`
+- tell Git to save the set of modifications we previously added, and create a new restore point ("commit").
+- a message is added to describe the logical change from the previous point.
+- the message is written as an imperative by convention eg. `git commit -m "add config file"`.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: discussion
 ### Atomic Commits
@@ -84,7 +84,7 @@ We can then build up our project using this cycle with a new commit each time we
 ## Follow the recipe
 
 Make a new subdirectory in your recipes repository, and name it after a recipe you know.
-Within this directory, create an `Ingredients.md` file and a `Method.md` file. 
+Within this directory, create an `Ingredients.md` file and a `Method.md` file.
 
 Fill the files with the simplest details of your recipe and commit them to the repository.
 
@@ -110,7 +110,7 @@ We can commit them like so: `git commit -m "change ingredient x to ingredient y"
 
 ## Undoing things
 
-Making changes and creating commits can seem daunting at first. It's easy to mix up what files to add to a commit, and mistakes happen all the time. We don't want these mistakes to also be saved indefinitely. The good news is that we can undo any of the steps in the cycle. 
+Making changes and creating commits can seem daunting at first. It's easy to mix up what files to add to a commit, and mistakes happen all the time. We don't want these mistakes to also be saved indefinitely. The good news is that we can undo any of the steps in the cycle.
 
 ![common git restore commands](fig/git_restore_comparison_diagram.svg)
 
@@ -126,9 +126,9 @@ Finally, if we are working locally, we can undo the commit. This is called rewri
 
 To undo the commit, we can use `git reset` with additional flags:
 
-- `--soft`  undoes the act of the commit and keeps the staged modifications
+- `--soft` undoes the act of the commit and keeps the staged modifications.
 
-- `--mixed` keeps the modifications but leaves them unstaged
+- `--mixed` keeps the modifications but leaves them unstaged.
 
 - `--hard` undoes all the modifications and returns the state to the previous commit.
 
@@ -161,11 +161,11 @@ From this point, confirm each step using `git status` and `git log`
 
 modify the file and add another instruction.
 
-- use the commands to stage the new changes
+- use the commands to stage the new changes.
 
-- commit staged changes
+- commit staged changes.
 
-- confirm the changes with `git status` and `git log`
+- confirm the changes with `git status` and `git log`.
 
 
 
@@ -176,24 +176,24 @@ modify the file and add an incorrect instruction.
 
 - use the commands to stage and commit the error.
 
-- confirm the error with `git status` and `git log`
+- confirm the error with `git status` and `git log`.
 
-- undo the commit leaving modifications in the staging area
+- undo the commit leaving modifications in the staging area.
 
 
 
 **Part 4: One step forward two steps back**
 
-rename the commit and then unstage it
+rename the commit and then unstage it.
 
-- commit again with a different message 
+- commit again with a different message.
 
-- undo the commit keeping modifications but unstaged
+- undo the commit keeping modifications but unstaged.
 
 
 **Part 5: Three more steps forward**
 
-correct the instruction in the file, then add and commit it
+correct the instruction in the file, then add and commit it.
 
 
 
@@ -204,42 +204,42 @@ completely undo the commit so it's unchanged from Part 2.
 
 :::::::::::::::::::::::: solution 
 ### Part 1
-use the commands `git add <file>` to stage a file
-use `git status` to check it has been staged
-use `git restore --staged <file>` to unstage the file
-use `git status` to check it has been unstaged. 
+use the commands `git add <file>` to stage a file.
+use `git status` to check it has been staged.
+use `git restore --staged <file>` to unstage the file.
+use `git status` to check it has been unstaged.
 ::::::::::::::::::::::::
 :::::::::::::::::::::::: solution
-### Part 2 
+### Part 2
 
-modify the file then use `git add <file>` and `git commit -m "commit message"` to add a commit
+modify the file then use `git add <file>` and `git commit -m "commit message"` to add a commit.
 use `git status` and `git log` to check the commit has been added.
 ::::::::::::::::::::::::
 :::::::::::::::::::::::: solution
 ### Part 3
 
-initially same as Part 2
-then to inverse use `git reset --soft`
+initially same as Part 2.
+then to inverse use `git reset --soft`.
 ::::::::::::::::::::::::
 :::::::::::::::::::::::: solution
 ### Part 4
-use `git commit -m "new commit message"`
-then to inverse and unstage `git reset --mixed`
+use `git commit -m "new commit message"`.
+then to inverse and unstage `git reset --mixed`.
 ::::::::::::::::::::::::
 :::::::::::::::::::::::: solution
 ### Part 5
-same as Part 2
+same as Part 2.
 ::::::::::::::::::::::::
 :::::::::::::::::::::::: solution
 ### Part 6
-use `git reset --hard`
+use `git reset --hard`.
 
 
 :::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::::
 
-Note that when using `git reset` to undo a `git commit`, the same rule is applied to all the staged changes the commit contains, similar to how a `git commit` puts all the staged changes into a commit. This is different to how `git add <files>` and `git restore --staged <files>` apply to individual files. 
+Note that when using `git reset` to undo a `git commit`, the same rule is applied to all the staged changes the commit contains, similar to how a `git commit` puts all the staged changes into a commit. This is different to how `git add <files>` and `git restore --staged <files>` apply to individual files.
 
 Now that you are familiar with making commits, try to add a few steps to this recipe in separate commits.
 Remember to make single logical changes each time and use a descriptive commit message.
@@ -251,10 +251,10 @@ Hopefully this will highlight the importance of single logical changes and accur
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- Check the current state using `git status` and `git log`
-- Make self-consistent logical changes with the modify add commit cycle
-- Use concise, accurate commit messages to help you follow your process
-- undo any part of this cycle using `git restore --staged` or `git reset with --soft, --mixed, or  --hard` 
+- Check the current state using `git status` and `git log`.
+- Make self-consistent logical changes with the modify add commit cycle.
+- Use concise, accurate commit messages to help you follow your process.
+- Undo any part of this cycle using `git restore --staged` or `git reset with --soft, --mixed, or --hard`.
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::

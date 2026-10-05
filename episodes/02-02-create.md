@@ -87,7 +87,7 @@ Other repositories are not required to track subdirectories and doing this can l
 
 Separation is key:
 
-- unrelated projects should be version controlled separately in separate folders
+- unrelated projects should be version controlled separately in separate folders.
 - only relevant files should be in the repository directory and version controlled.
 
 Also, note
@@ -100,6 +100,6 @@ repository are completely separate processes.
 
 - `git init` initialises a repository.
 - Git stores all of its repository data in the `.git` directory.
-- Only one repository is required for a project and all its sub directories
+- Only one repository is required for a project and all its sub directories.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::

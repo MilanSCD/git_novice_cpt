@@ -5,8 +5,8 @@ exercises: 2
 ---
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Understand how to setup SSH keys
-- Setup SSH keys for GitHub
+- Understand how to setup SSH keys.
+- Setup SSH keys for GitHub.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -21,22 +21,22 @@ exercises: 2
 
 Before we can connect to a remote repository, we needs to set up a way for our computer to authenticate with GitHub so it knows it's us trying to connect to our remote repository.
 
-We are going to set up the method that is commonly used by many different services to authenticate access on the command line.  This method is called Secure Shell Protocol (SSH).  SSH is a cryptographic network protocol that allows secure communication between computers using an otherwise insecure network.
+We are going to set up the method that is commonly used by many different services to authenticate access on the command line. This method is called Secure Shell Protocol (SSH). SSH is a cryptographic network protocol that allows secure communication between computers using an otherwise insecure network.
 
 SSH uses what is called a key pair. This is two keys that work together to validate access. One key is publicly known and called the public key, and the other key called the private key is kept private. Very descriptive names.
 
-You can think of the public key as a padlock, and only you have the key (the private key) to open it. You use the public key where you want a secure method of communication, such as your GitHub account.  You give this padlock, or public key, to GitHub and say "lock the communications to my account with this so that only computers that have my private key can unlock communications and send Git commands as my GitHub account."
+You can think of the public key as a padlock, and only you have the key (the private key) to open it. You use the public key where you want a secure method of communication, such as your GitHub account. You give this padlock, or public key, to GitHub and say "lock the communications to my account with this so that only computers that have my private key can unlock communications and send Git commands as my GitHub account."
 
 What we will do now is the minimum required to set up the SSH keys and add the public key to a GitHub account.
 
-The first thing we are going to do is check if this has already been done on the computer you're on.  Because generally speaking, this setup only needs to happen once and then you can forget about it.
+The first thing we are going to do is check if this has already been done on the computer you're on. Because generally speaking, this setup only needs to happen once and then you can forget about it.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
 ## Keeping your keys secure
 
 You shouldn't really forget about your SSH keys, since they keep your account secure. It's good
-practice to check your SSH keys every so often to ensure they are still secure, up to date, 
+practice to check your SSH keys every so often to ensure they are still secure, up to date,
 and that there are no unauthorised keys that could compromise your account.
 This is especially important if you are using multiple computers to access your account.
 
@@ -51,7 +51,7 @@ $ ls -al ~/.ssh
 
 Your output is going to look a little different depending on whether or not SSH has ever been set up on the computer you are using.
 
-Alfredo has not set up SSH on his computer, so his output is
+Alfredo has not set up SSH on his computer, so his output is:
 
 ```output
 ls: cannot access '/c/Users/Alfredo/.ssh': No such file or directory
@@ -122,7 +122,7 @@ This is normal: your passphrase will be recorded even if you see nothing changin
 Enter same passphrase again:
 ```
 
-After entering the same passphrase a second time, we receive the confirmation
+After entering the same passphrase a second time, we receive the confirmation:
 
 ```output
 Your identification has been saved in /c/Users/Alfredo/.ssh/id_ed25519
@@ -143,7 +143,7 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 
-The "identification" is actually the private key. You should never share it.  The public key is appropriately named.  The "key fingerprint"
+The "identification" is actually the private key. You should never share it. The public key is appropriately named. The "key fingerprint"
 is a shorter version of a public key.
 
 Now that we have generated the SSH keys, we will find the SSH files when we check.
@@ -179,7 +179,7 @@ git@github.com: Permission denied (publickey).
 
 Right, we forgot that we need to give GitHub our public key!
 
-First, we need to copy the public key.  Be sure to include the `.pub` at the end, otherwise you're looking at the private key.
+First, we need to copy the public key. Be sure to include the `.pub` at the end, otherwise you're looking at the private key.
 
 ```bash
 cat ~/.ssh/id_ed25519.pub
@@ -189,7 +189,7 @@ cat ~/.ssh/id_ed25519.pub
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDmRA3d51X0uu9wXek559gfn6UFNF69yZjChyBIU2qKI a.linguini@ratatouille.fr
 ```
 
-Now, going to GitHub.com, click on your profile icon in the top right corner to get the drop-down menu.  Click "Settings", then on the
+Now, going to GitHub.com, click on your profile icon in the top right corner to get the drop-down menu. Click "Settings", then on the
 settings page, click "SSH and GPG keys", on the left side "Access" menu. Click the "New SSH key" button on the right side. Now,
 you can add the title (Alfredo uses the title "Alfredo's Kitchen Laptop" so he can remember where the original key pair
 files are located), paste your SSH key into the field, and click the "Add SSH key" to complete the setup.
@@ -208,8 +208,8 @@ Good! This output confirms that the SSH key works as intended.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- SSH keys allow you to authenticate yourself
-- SSH keys should be handled carefully to maintain security
+- SSH keys allow you to authenticate yourself.
+- SSH keys should be handled carefully to maintain security.
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::

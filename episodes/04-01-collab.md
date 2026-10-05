@@ -18,7 +18,7 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-For the next step, get into pairs.  One person will be the "Owner" and the other
+For the next step, get into pairs. One person will be the "Owner" and the other
 will be the "Collaborator". The goal is that the Collaborator add changes into
 the Owner's repository. We will switch roles at the end, so both persons will
 play Owner and Collaborator.
@@ -113,7 +113,7 @@ To https://github.com/alflin/recipes.git
 ```
 
 Note that we didn't have to create a remote called `origin`: Git uses this
-name by default when we clone a repository.  (This is why `origin` was a
+name by default when we clone a repository. (This is why `origin` was a
 sensible choice earlier when we were setting up remotes by hand.)
 
 Take a look at the Owner's repository on GitHub again, and you should be
@@ -142,8 +142,8 @@ The `git remote` family of commands is used to set up and alter the remotes
 associated with a repository. Here are some of the most useful ones:
 
 - `git remote -v` lists all the remotes that are configured (we already used
-  this in the last episode)
-- `git remote add [name] [url]` is used to add a new remote
+  this in the last episode).
+- `git remote add [name] [url]` is used to add a new remote.
 - `git remote remove [name]` removes a remote. Note that it doesn't affect the
   remote repository at all - it just removes the link to it from the local repo.
 - `git remote set-url [name] [newurl]` changes the URL that is associated

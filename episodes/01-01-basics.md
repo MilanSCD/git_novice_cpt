@@ -47,7 +47,7 @@ sets of changes on the same document.
 
 ![](fig/versions.svg){alt='A diagram with one source document that has been modified in two different ways to produce two different versions of the document' width="60%"}
 
-Unless multiple users make changes to the same section of the document - a 
+Unless multiple users make changes to the same section of the document - a
 [conflict](../learners/reference.md#conflict) - you can
 incorporate two sets of changes into the same base document.
 
@@ -57,7 +57,7 @@ A version control system is a tool that keeps track of these changes for us,
 effectively creating different versions of our files. It allows us to decide
 which changes will be made to the next version (each record of these changes is
 called a [commit](../learners/reference.md#commit)), and keeps useful metadata
-about them, such as who made the change. The complete history of commits for a 
+about them, such as who made the change. The complete history of commits for a
 particular project and their metadata make up a [repository](../learners/reference.md#repository).
 Repositories can be kept in sync across different computers, facilitating
 collaboration among different people.
@@ -76,11 +76,11 @@ are *distributed*, meaning that they do not need a centralised server to host th
 These modern systems also include powerful merging tools that make it possible for multiple authors to work on
 the same files concurrently.
 
-Git was created by Linus Torvalds in 2005 
+Git was created by Linus Torvalds in 2005
 as an alternative to BitKeeper, one of the first distributed version control
 systems, to track changes in the Linux kernel.
 Torvalds provided several explanations of the name, of varying degrees of
-politeness, which are enumerated in the 
+politeness, which are enumerated in the
 [project's README](https://github.com/git/git/blob/master/README.md?plain=1#L55),
 including "Global Information Tracker" for when "you're in a good mood".
 
@@ -95,7 +95,7 @@ For those interested, The Carpentries has a [Version Control with Mercurial](htt
   it. How would you retrieve the *excellent* version of your conclusion? Is it even possible?
 
 - Imagine you have 5 co-authors. How would you manage the changes and comments
-  they make to your paper?  If you use LibreOffice Writer or Microsoft Word, what happens if
+  they make to your paper? If you use LibreOffice Writer or Microsoft Word, what happens if
   you accept changes made using the `Track Changes` option? Do you have a
   history of those changes?
 

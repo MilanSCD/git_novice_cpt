@@ -25,7 +25,7 @@ licensees) that they would otherwise not have. What rights are being
 granted under which conditions differs, often only slightly, from one
 license to another. In practice, a few licenses are by far the most
 popular, and [choosealicense.com](https://choosealicense.com/) will
-help you find a common license that suits your needs.  Important
+help you find a common license that suits your needs. Important
 considerations include:
 
 - Whether you want to address patent rights.
@@ -37,7 +37,7 @@ considerations include:
 Choosing a license that is in common use makes life easier for
 contributors and users, because they are more likely to already be
 familiar with the license and don't have to wade through a bunch of
-jargon to decide if they're ok with it.  The [Open Source
+jargon to decide if they're ok with it. The [Open Source
 Initiative](https://opensource.org/licenses) and [Free Software
 Foundation](https://www.gnu.org/licenses/license-list.html) both
 maintain lists of licenses which are good choices.

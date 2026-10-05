@@ -62,7 +62,7 @@ index b36abfd..0848c8d 100644
 +An ill-considered change
 ```
 
-Here we have the difference between the file in our working directory and the most recently committed version. 
+Here we have the difference between the file in our working directory and the most recently committed version.
 
 We can also refer to earlier commits relative to `HEAD`. For example, by adding `~1` (where "~" is "tilde", pronounced [**til**\-d*uh*]), we can look at the commit before `HEAD`.
 
@@ -250,7 +250,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 ```
 
-Notice that the changes are not currently in the staging area, and have not been committed. 
+Notice that the changes are not currently in the staging area, and have not been committed.
 If we wished, we could put things back the way they were at the last commit by using `git restore` to overwrite
 the working copy with the last committed version:
 
@@ -337,7 +337,7 @@ you should use `git restore .`
 
 ## Understanding Workflow and History
 
-What is the output of the last command in
+What is the output of the last command in:
 
 ```bash
 $ cd recipes
@@ -379,7 +379,7 @@ has only one line.
 
 At this time, the working copy still has the second line (and `git status` will show that the file is modified). However, `git restore ketchup.md`
 replaces the working copy with the most recently committed version of `ketchup.md`.
-So, `cat ketchup.md` will output
+So, `cat ketchup.md` will output:
 
 ```output
 I like tomatoes, therefore I like ketchup
@@ -514,7 +514,7 @@ $ git log --patch HEAD~9 *.md
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
-- The HEAD labels the currently checked out commit and we can refer to previous commits using `~N`
+- The HEAD labels the currently checked out commit and we can refer to previous commits using `~N`.
 - `git diff` and `git show` display differences between commits.
 - `git restore` recovers previous versions of files.
 

@@ -198,7 +198,7 @@ Further, the discussion page has more detail on ignore rules.
 
 How would you ignore all `.png` files in your root directory except for
 `final.png`?
-Hint: Find out what `!` (the exclamation point operator) does
+Hint: Find out what `!` (the exclamation point operator) does.
 
 :::::::::::::::  solution
 
@@ -370,8 +370,8 @@ You want to keep them but you do not want to track them through `git`.
 
 ## Solution
 
-1. append either `log_*`  or  `log*`  as a new entry in your .gitignore
-2. track `log_01` using   `git add -f log_01`
+1. append either `log_*` or `log*` as a new entry in your .gitignore.
+2. track `log_01` using `git add -f log_01`.
   
   
 

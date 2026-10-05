@@ -21,8 +21,8 @@ When we use Git on a new computer for the first time,
 we need to configure a few things. Below are a few examples
 of configurations we will set as we get started with Git:
 
-- our name
-- our email address
+- our name.
+- our email address.
 - and that we want to use these settings globally (i.e. for every project).
 
 On a command line, Git commands are written as `git verb options`,
@@ -86,7 +86,7 @@ $ git config --global core.autocrlf true
 
 
 Git (2.28+) allows configuration of the name of the branch created when you
-initialise any new repository.  Alfredo decides to use that feature to set it to `main` so
+initialise any new repository. Alfredo decides to use that feature to set it to `main` so
 it matches the cloud service he will eventually use.
 
 ```bash
@@ -102,16 +102,16 @@ Don't worry too much about what this means right now - we will get to that later
 By default, Git will create a branch called `master`
 when you create a new repository with `git init` (as explained in the next episode). This term evokes
 the racist practice of human slavery and the
-[software development community](https://github.com/github/renaming)  has moved to adopt
+[software development community](https://github.com/github/renaming) has moved to adopt
 more inclusive language.
 
 In 2020, most Git code hosting services transitioned to using `main` as the default
 branch. As an example, any new repository that is opened in GitHub and GitLab default
-to `main`.  However, Git has not yet made the same change.  As a result, local repositories
+to `main`. However, Git has not yet made the same change. As a result, local repositories
 must be manually configured have the same main branch name as most cloud services.
 
-For versions of Git prior to 2.28, the change can be made on an individual repository level.  The
-command for this is in the next episode.  Note that if this value is unset in your local Git
+For versions of Git prior to 2.28, the change can be made on an individual repository level. The
+command for this is in the next episode. Note that if this value is unset in your local Git
 configuration, the `init.defaultBranch` value defaults to `master`.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::

@@ -18,12 +18,12 @@ exercises: 2
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Version control really comes into its own when we begin to collaborate with
-other people.  We already have most of the machinery we need to do this; the
+other people. We already have most of the machinery we need to do this; the
 only thing missing is to copy changes from one repository to another.
 
-Systems like Git allow us to move work between any two repositories.  In
+Systems like Git allow us to move work between any two repositories. In
 practice, though, it's easiest to use one copy as a central hub, and to keep it
-on the web rather than on someone's laptop.  Most programmers use hosting
+on the web rather than on someone's laptop. Most programmers use hosting
 services like [GitHub](https://github.com), [Bitbucket](https://bitbucket.org) or
 [GitLab](https://gitlab.com/) to hold those main copies.
 
@@ -64,7 +64,7 @@ remote repository on GitHub appears empty as it doesn't contain any files yet.
 
 ## 2\. Connect local to remote repository
 
-Now we connect the two repositories.  We do this by making the
+Now we connect the two repositories. We do this by making the
 GitHub repository a [remote](../learners/reference.md#remote) for the local repository.
 The home page of the repository on GitHub includes the URL string we need to
 identify it:
@@ -78,7 +78,7 @@ Click on the 'SSH' link to change the [protocol](../learners/reference.md#protoc
 ## HTTPS vs. SSH
 
 We use SSH here because, while it requires some additional configuration, it is a
-security protocol widely used by many applications.  The steps below describe SSH at a
+security protocol widely used by many applications. The steps below describe SSH at a
 minimum level for GitHub.
 
 
@@ -116,14 +116,14 @@ talking about how they might be used for collaboration.
 
 ## 3\. Push local changes to a remote
 
-Now that authentication is setup, we can return to the remote.  This command will push the changes from
+Now that authentication is setup, we can return to the remote. This command will push the changes from
 our local repository to the repository on GitHub:
 
 ```bash
 $ git push origin main
 ```
 
-Since Alfredo set up a passphrase, it will prompt him for it.  If you completed advanced settings for your authentication, it
+Since Alfredo set up a passphrase, it will prompt him for it. If you completed advanced settings for your authentication, it
 will not prompt for a passphrase.
 
 ```output
@@ -148,7 +148,7 @@ Our local and remote repositories are now in sync.
 
 ## The '-u' Flag
 
-You may see a `-u` option used with `git push` in some documentation.  This
+You may see a `-u` option used with `git push` in some documentation. This
 option is synonymous with the `--set-upstream-to` option for the `git branch`
 command, and is used to associate the current branch with a remote branch so
 that the `git pull` command can be used without any arguments. To do this,
@@ -170,7 +170,7 @@ Already up-to-date.
 ```
 
 Pulling has no effect in this case because the two repositories are already
-synchronised.  If someone else had pushed some changes to the repository on
+synchronised. If someone else had pushed some changes to the repository on
 GitHub, though, this command would download them to our local repository.
 
 ![In the general no conflict case, a git pull adds its new commits to your local branch](fig/git_pull_diagram.svg)
