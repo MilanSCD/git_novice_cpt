@@ -113,7 +113,7 @@ origin   git@github.com:alflin/recipes.git (push)
 We'll discuss remotes in more detail in the next episode, while
 talking about how they might be used for collaboration.
 
-## 4\. Push local changes to a remote
+## 3\. Push local changes to a remote
 
 Now that authentication is setup, we can return to the remote.  This command will push the changes from
 our local repository to the repository on GitHub:
