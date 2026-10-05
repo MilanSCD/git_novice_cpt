@@ -114,6 +114,7 @@ then we can commit them like so: `git commit -m "change ingredient x to ingredie
 
 Making changes and creating commits can seem daunting at first. Its easy to mix up what files to add to a commit and mistakes happen all the time. We don't want these mistakes to also be saved indefinitely. The good news is that we can undo any of the steps in the cycle. 
 
+![common git restore commands](fig/git_restore_comparison_diagram.svg)
 
 within the modify, add, commit cycle, we can undo any state changes and inverse any command:
 

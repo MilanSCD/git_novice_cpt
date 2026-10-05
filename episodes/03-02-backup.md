@@ -58,17 +58,7 @@ $ cd recipes
 $ git init
 ```
 
-If you remember back to the earlier [episode](03-01-changes.md) where we added and
-committed our earlier work on `guacamole.md`, we had a diagram of the local repository
-which looked like this:
-
-![](fig/git-staging-area.svg){alt='A diagram showing how "git add" registers changes in the staging area, while "git commit" moves changes from the staging area to the repository'}
-
-Now that we have two repositories, we need a diagram like this:
-
-![](fig/git-freshly-made-github-repo.svg){alt='A diagram illustrating how the GitHub "recipes" repository is also a git repository like our local repository, but that it is currently empty'}
-
-Note that our local repository still contains our earlier work on `guacamole.md`, but the
+Note that our local repository still contains our earlier work on our recipes, but the
 remote repository on GitHub appears empty as it doesn't contain any files yet.
 
 ## 2\. Connect local to remote repository
@@ -148,9 +138,10 @@ To https://github.com/alflin/recipes.git
 ```
 
 
-Our local and remote repositories are now in this state:
+Our local and remote repositories are now in sync.
 
-![](fig/github-repo-after-first-push.svg){alt='A diagram showing how "git push origin" will push changes from the local repository to the remote, making the remote repository an exact copy of the local repository.'}
+![in the general no conflict case, a git push adds your new commits to your remote branch so they are in sync](fig/git_push_diagram.svg)
+
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
@@ -180,6 +171,13 @@ Already up-to-date.
 Pulling has no effect in this case because the two repositories are already
 synchronized.  If someone else had pushed some changes to the repository on
 GitHub, though, this command would download them to our local repository.
+
+![In the general no conflict case a git pull adds its new commits to your local branch](fig/git_pull_diagram.svg)
+
+If you don't want to necessarily add the commits, but you want to refresh your view of the remote branch you can use `git fetch` instead.
+A `git pull` is actually just a `git fetch` followed by a `git merge` which we will discuss later.
+
+![Git fetch updates the remote tracking branch. here origin/main moves to C4 and the local main branch is 2 commits behind](fig/git_fetch_diagram.svg)
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
