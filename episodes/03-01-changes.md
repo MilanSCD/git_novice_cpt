@@ -22,10 +22,13 @@ exercises: 2
 
 ## Introduction
 
-Once we have our respoitory set up, we can start making use of gits tracking features. To start with we can use the git status command.
+Once we have our repository set up, we can start making use of gits tracking features. To start with we can use the git status command.
 Files in the repository directory are either tracked or untracked.
 
 ### Tracked and untracked files
+
+![File system diagram. The working tree files you see consist of files in the git HEAD, staged modifications, unstaged modifications and untracked files](fig/git_filesystem_diagram.svg)
+
 
 Untracked files are files in the directory which have not yet been added to the git repository.
 Git is aware of them: they will show up as untracked in a `git status` output. However git will not be able to track changes in these files.
@@ -64,11 +67,11 @@ Making changes and tracking them in git follows a 3 step cycle:
 
 - tell git to save the set of modifications we previously added, and create a new restore point ("commit")
 - a message is added to describe the logical change from the previous point
-- the message is written as an imperative by convention eg. "add config file"
+- the message is written as an imperative by convention eg. `git commit -m add config file`
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: discussion
-### Atomistic Commits
-The idea of this cycle is that we should only create commits (restore points) for a minimal set of modifications that constitute a single self consistent logical change. Each commit is saved as the modifications to or difference between the current commit and the previous one. Once we commit, the staged changes are now just part of the current version, so the staging area is empty. A copy of the commited version is saved in the .git directory.
+### Atomic Commits
+The idea of this cycle is that we should only create commits (restore points) for a minimal set of modifications that constitute a single self consistent logical change. Each commit is saved as the modifications to or difference between the current commit and the previous one. Once we commit, the staged changes are now just part of the current version, so the staging area is empty. A copy of the committed version is saved in the .git directory.
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ### Git History
@@ -77,6 +80,34 @@ We can then build up our project using this cycle with a new commit each time we
 
 ![Simple git history. Each commit adds modifications to the last one. The branch "main" is just a label pointing to commit C4. "HEAD" is also just a label showing what is currently in the file system. We will see how we can add branches later.](fig/git_simple_history_diagram.png)
 
+:::::::::::::::::::::::::::: challenge
+
+# Follow the recipe
+
+Make a new sub directory in your Recipes repository, and name it after a recipe you know.
+within this directory add create an `Ingredients.md` file and an `Method.md` file. 
+
+Fill the files with the simplest details of your recipe and commit them to the repository.
+
+Change the one of ingredients and keep them consistently named in both files.
+How should we add them to the repository to ensure each version is self consistent?
+
+Make 4 or 5 more logical changes to your recipe and commit them when you feel appropriate.
+to check your work run the `git status` and `git log` commands as you go along.
+
+If you make mistakes, for now just continue to use the M-A-C cycle to fix them.
+
+:::::::::::::::::::::::::::: solution
+
+For consistency we can add both files together:
+`git add Ingredients.md Method.md`
+then we can commit them like so: `git commit -m "change ingredient x to ingredient y"`
+
+
+
+::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::
 
 
 ## Undoing things
