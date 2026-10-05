@@ -37,7 +37,7 @@ The first thing we are going to do is check if this has already been done on the
 
 You shouldn't really forget about your SSH keys, since they keep your account secure. It's good
 practice to check your SSH keys every so often to ensure they are still secure, up to date, 
-and that there are no unauthorized keys that could compromise your account.
+and that there are no unauthorised keys that could compromise your account.
 This is especially important if you are using multiple computers to access your account.
 
 

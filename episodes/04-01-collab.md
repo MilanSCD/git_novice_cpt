@@ -25,7 +25,7 @@ play Owner and Collaborator.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
-## Practicing By Yourself
+## Practising By Yourself
 
 If you're working through this lesson on your own, you can carry on by opening
 a second terminal window.

@@ -72,7 +72,7 @@ many large companies.
 However, many of these are now considered legacy systems (i.e., outdated) due to various
 limitations in their capabilities.
 More modern systems, such as [Git](https://en.wikipedia.org/wiki/Git) and [Mercurial](https://en.wikipedia.org/wiki/Mercurial),
-are *distributed*, meaning that they do not need a centralized server to host the repository.
+are *distributed*, meaning that they do not need a centralised server to host the repository.
 These modern systems also include powerful merging tools that make it possible for multiple authors to work on
 the same files concurrently.
 

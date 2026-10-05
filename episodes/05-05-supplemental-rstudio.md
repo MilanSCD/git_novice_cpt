@@ -30,12 +30,12 @@ project with Git. To get started using Git in RStudio, we create a new project:
 
 ![](fig/RStudio_screenshot_newproject.png){alt='RStudio screenshot showing the file menu dropdown with "New Project..." selected'}
 
-This opens a dialog asking us how we want to create the project. We have
+This opens a dialogue asking us how we want to create the project. We have
 some options here. Let's say that we want to use RStudio with the recipes
 repository that we already made. Since that repository lives in a directory on
 our computer, we choose the option "Existing Directory":
 
-![](fig/RStudio_screenshot_existingdirectory.png){alt='RStudio screenshot showing New Project dialog window with "Create project from existing directory" selected'}
+![](fig/RStudio_screenshot_existingdirectory.png){alt='RStudio screenshot showing New Project dialogue window with "Create project from existing directory" selected'}
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
@@ -82,11 +82,11 @@ to accept the Xcode license if you are using macOS.
 Next, RStudio will ask which existing directory we want to use. Click
 "Browse..." and navigate to the correct directory, then click "Create Project":
 
-![](fig/RStudio_screenshot_navigateexisting.png){alt='RStudio window showing the "Create Project From Existing Directory" dialog. In the dialog, the project working directory has been set to "~/Desktop/recipes"'}
+![](fig/RStudio_screenshot_navigateexisting.png){alt='RStudio window showing the "Create Project From Existing Directory" dialogue. In the dialogue, the project working directory has been set to "~/Desktop/recipes"'}
 
 Ta-da! We have created a new project in RStudio within the existing recipes
 repository. Notice the vertical "Git" menu in the menu bar. RStudio has
-recognized that the current directory is a Git repository, and gives us a
+recognised that the current directory is a Git repository, and gives us a
 number of tools to use Git:
 
 ![](fig/RStudio_screenshot_afterclone.png){alt='RStudio window after new project is created with large arrow pointing to vertical Git menu bar.'}
@@ -109,7 +109,7 @@ the current status of each file. Clicking on a file shows information about
 changes in the lower panel (using output of `git diff`). Once everything is the
 way we want it, we click "Commit":
 
-![](fig/RStudio_screenshot_review.png){alt='RStudio screenshow showing the "Review Changes" dialog. The top left panel shows the list of files that can be included or excluded from the commit. The top right panel is for writing a commit message. The bottom panel shows information about the currently selected file in the top left panel.'}
+![](fig/RStudio_screenshot_review.png){alt='RStudio screenshow showing the "Review Changes" dialogue. The top left panel shows the list of files that can be included or excluded from the commit. The top right panel is for writing a commit message. The bottom panel shows information about the currently selected file in the top left panel.'}
 
 The changes can be pushed by selecting "Push Branch" from the Git menu. There
 are also options to pull from the remote repository, and to view the commit
@@ -119,9 +119,9 @@ history:
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
-## Are the Push/Pull Commands Grayed Out?
+## Are the Push/Pull Commands Greyed Out?
 
-Grayed out Push/Pull commands generally mean that RStudio doesn't know the
+Greyed out Push/Pull commands generally mean that RStudio doesn't know the
 location of your remote repository (e.g. on GitHub). To fix this, open a
 terminal to the repository and enter the command: `git push -u origin main`. Then restart RStudio.
 
@@ -131,7 +131,7 @@ terminal to the repository and enter the command: `git push -u origin main`. The
 If we click on "History", we can see a graphical version of what `git log`
 would tell us:
 
-![](fig/RStudio_screenshot_viewhistory.png){alt='RStudio screenshot showing the "Review Changes" dialog after pressing the "History" button. The top panel lists the commits in the repository, similar to git log. The bottom panel shows the changes included in the commit that has been selected in the top panel.'}
+![](fig/RStudio_screenshot_viewhistory.png){alt='RStudio screenshot showing the "Review Changes" dialogue after pressing the "History" button. The top panel lists the commits in the repository, similar to git log. The bottom panel shows the changes included in the commit that has been selected in the top panel.'}
 
 Now that you've confirmed your commit history locally using the Git pane in RStudio, you can head over to GitHub to see the same history reflected in your repository online.
 
@@ -149,7 +149,7 @@ Next, let’s take a look at how RStudio quietly helps manage your repository by
 
 When you create a *New Project* in RStudio, it generates an *.Rproj file and a hidden folder called `.Rproj.user`. These are used to store project-specific settings and user preferences.
 
-RStudio recognizes that these files typically shouldn’t be tracked in version control, so it automatically adds `.Rproj.user` to your existing `.gitignore` file.
+RStudio recognises that these files typically shouldn’t be tracked in version control, so it automatically adds `.Rproj.user` to your existing `.gitignore` file.
 
 Notice that the `.gitignore` file was modified and appears as a changed file in the Git tab on the right-hand side panel.
 

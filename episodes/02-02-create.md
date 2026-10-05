@@ -91,14 +91,14 @@ Separation is key:
 - only relevant files should be in the repository directory and version controlled.
 
 Also, note
-that the creation of the `recipes` directory and its initialization as a
+that the creation of the `recipes` directory and its initialisation as a
 repository are completely separate processes.
 
 :::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- `git init` initializes a repository.
+- `git init` initialises a repository.
 - Git stores all of its repository data in the `.git` directory.
 - Only one repository is required for a project and all its sub directories
 

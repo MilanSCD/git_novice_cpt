@@ -66,7 +66,7 @@ it may cause unexpected issues when editing a file on different machines.
 Though it is beyond the scope of this lesson, you can read more about this issue
 [in the Pro Git book](https://www.git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_autocrlf).
 
-You can change the way Git recognizes and encodes line endings
+You can change the way Git recognises and encodes line endings
 using the `core.autocrlf` command to `git config`.
 The following settings are recommended:
 
@@ -86,7 +86,7 @@ $ git config --global core.autocrlf true
 
 
 Git (2.28+) allows configuration of the name of the branch created when you
-initialize any new repository.  Alfredo decides to use that feature to set it to `main` so
+initialise any new repository.  Alfredo decides to use that feature to set it to `main` so
 it matches the cloud service he will eventually use.
 
 ```bash

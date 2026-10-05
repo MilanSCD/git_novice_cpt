@@ -285,7 +285,7 @@ here's how Git works in cartoon form:
 
 
 The fact that files can be reverted one by one
-tends to change the way people organize their work.
+tends to change the way people organise their work.
 For example, in a thesis, if everything is in one large document,
 it's hard (but not impossible) to undo changes to the introduction
 without also undoing changes made later to the conclusion.
@@ -474,7 +474,7 @@ nothing to commit, working tree clean
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Explore and Summarize Histories
+## Explore and Summarise Histories
 
 Exploring history is an important part of Git, and often it is a challenge to find
 the right commit ID, especially if the commit is from several months ago.
@@ -494,7 +494,7 @@ $ git log guacamole.md
 Unfortunately some of these commit messages are very ambiguous, e.g., `update files`.
 How can you search through these files?
 
- `git diff` and `git log` each summarize a different part of the history
+ `git diff` and `git log` each summarise a different part of the history
 for you.
 Is it possible to combine both? Let's try the following:
 

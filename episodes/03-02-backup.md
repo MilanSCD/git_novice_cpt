@@ -170,7 +170,7 @@ Already up-to-date.
 ```
 
 Pulling has no effect in this case because the two repositories are already
-synchronized.  If someone else had pushed some changes to the repository on
+synchronised.  If someone else had pushed some changes to the repository on
 GitHub, though, this command would download them to our local repository.
 
 ![In the general no conflict case, a git pull adds its new commits to your local branch](fig/git_pull_diagram.svg)
@@ -277,7 +277,7 @@ Commit only updates your local repository.
 
 ## GitHub License and README files
 
-In this episode we learned about creating a remote repository on GitHub, but when you initialized
+In this episode we learned about creating a remote repository on GitHub, but when you initialised
 your GitHub repo, you didn't add a README.md or a license file. If you had, what do you think
 would have happened when you tried to link your local and remote repositories?
 
