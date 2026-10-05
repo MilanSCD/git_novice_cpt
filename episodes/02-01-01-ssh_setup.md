@@ -1,5 +1,5 @@
 ---
-title: 'SSh Setup'
+title: 'SSH Setup'
 teaching: 10
 exercises: 2
 ---

@@ -236,7 +236,7 @@ On GitHub, the Collaborator can go to the repository and click on
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::::::discussion
 
 ## Comment Changes in GitHub
 
@@ -251,7 +251,7 @@ The Collaborator posts her comments and suggestions using the GitHub interface.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::::::discussion
 
 ## Version History, Backup, and Version Control
 

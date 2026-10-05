@@ -3,7 +3,7 @@ permalink: index.html
 site: sandpaper::sandpaper_site
 ---
 
-[version control](learners/reference.md#version-control) is better than mailing files back and forth:
+[Version control](learners/reference.md#version-control) is better than mailing files back and forth:
 
 - Nothing that is committed to version control is ever lost, unless
   you work really, really hard at losing it. Since all old versions of

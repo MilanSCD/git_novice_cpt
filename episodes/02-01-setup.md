@@ -129,27 +129,6 @@ And if necessary, change your configuration using the
 same commands to choose another editor or update your email address.
 This can be done as many times as you want.
 
-:::::::::::::::::::::::::::::::::::::::::  callout
-
-## Proxy
-
-In some networks you need to use a
-[proxy](https://en.wikipedia.org/wiki/Proxy_server). If this is the case, you
-may also need to tell Git about the proxy:
-
-```bash
-$ git config --global http.proxy proxy-url
-$ git config --global https.proxy proxy-url
-```
-
-To disable the proxy, use
-
-```bash
-$ git config --global --unset http.proxy
-$ git config --global --unset https.proxy
-```
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
