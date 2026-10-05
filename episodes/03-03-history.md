@@ -26,7 +26,7 @@ identifiers. Git also provides a special identifier called `HEAD`, which refers 
 
 We can use `HEAD` together with commands we already know to examine our project’s history.
 
-Before we start, let's make a change to `guacamole.md` so we have something
+Before we start, let's make a change to our recipes. For example `guacamole.md` so we have something
 to compare. We won’t save this change yet.
 
 ```bash
