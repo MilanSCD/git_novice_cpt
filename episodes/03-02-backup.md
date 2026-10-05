@@ -3,6 +3,7 @@ title: 'Backing it up'
 teaching: 10
 exercises: 2
 ---
+
 ::::::::::::::::::::::::::::::::::::::: objectives
 
 - Explain what remote repositories are and why they are useful.
@@ -58,7 +59,7 @@ $ cd recipes
 $ git init
 ```
 
-Note that our local repository still contains our earlier work on our recipes, but the
+Note that our local repository still contains the work we did before on recipes, but the
 remote repository on GitHub appears empty as it doesn't contain any files yet.
 
 ## 2\. Connect local to remote repository
@@ -172,12 +173,12 @@ Pulling has no effect in this case because the two repositories are already
 synchronized.  If someone else had pushed some changes to the repository on
 GitHub, though, this command would download them to our local repository.
 
-![In the general no conflict case a git pull adds its new commits to your local branch](fig/git_pull_diagram.svg)
+![In the general no conflict case, a git pull adds its new commits to your local branch](fig/git_pull_diagram.svg)
 
-If you don't want to necessarily add the commits, but you want to refresh your view of the remote branch you can use `git fetch` instead.
-A `git pull` is actually just a `git fetch` followed by a `git merge` which we will discuss later.
+If you don't want to necessarily add the commits, but you want to refresh your view of the remote branch, you can use `git fetch` instead.
+A `git pull` is actually just a `git fetch` followed by a `git merge`, which we will discuss later.
 
-![Git fetch updates the remote tracking branch. here origin/main moves to C4 and the local main branch is 2 commits behind](fig/git_fetch_diagram.svg)
+![Git fetch updates the remote tracking branch. Here, origin/main moves to C4 and the local main branch is 2 commits behind](fig/git_fetch_diagram.svg)
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
