@@ -25,7 +25,7 @@ command-line, RStudio has a nice interface for many common Git operations.
 RStudio allows us to create a [project][rstudio-projects] associated with a
 given directory to keep track of various related files. To be able to track the
 development of the project over time, to be able to revert to previous
-versions, and to collaborate with others, we version control the Rstudio
+versions, and to collaborate with others, we version control the RStudio
 project with Git. To get started using Git in RStudio, we create a new project:
 
 ![](fig/RStudio_screenshot_newproject.png){alt='RStudio screenshot showing the file menu dropdown with "New Project..." selected'}
@@ -61,7 +61,7 @@ If there is no version of Git on your computer, please follow the
 [Git installation instructions](https://swcarpentry.github.io/git-novice/#installing-git)
 in the setup of this lesson to install Git now. Next open your shell or command prompt
 and type `which git` (macOS, Linux), or `where git` (Windows).
-Copy the path to the git executable.
+Copy the path to the Git executable.
 
 On one Windows computer which had GitHub Desktop installed on it, the path was:
 `C:/Users/UserName/AppData/Local/GitHubDesktop/app-1.1.1/resources/app/git/cmd/git.exe`
@@ -115,7 +115,7 @@ The changes can be pushed by selecting "Push Branch" from the Git menu. There
 are also options to pull from the remote repository, and to view the commit
 history:
 
-![](fig/RStudio_screenshot_history.png){alt='RStudio screenshot showing the git menu dropdown with the "History" option selected'}
+![](fig/RStudio_screenshot_history.png){alt='RStudio screenshot showing the Git menu dropdown with the "History" option selected'}
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 

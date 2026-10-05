@@ -36,7 +36,7 @@ option below.
 
 The third option is to use a public hosting service like
 [GitHub](https://github.com), [GitLab](https://gitlab.com), or
-[BitBucket](https://bitbucket.org).
+[Bitbucket](https://bitbucket.org).
 Each of these services provides a web interface that enables people to create,
 view, and edit their code repositories.  These services also provide
 communication and project management tools including issue tracking, wiki pages,
@@ -97,7 +97,7 @@ If so, who?
 
 Does your institution have a repository or repositories that you can
 use to share your papers, data and software? How do institutional repositories
-differ from services like [arXiV](https://arxiv.org/), [figshare](https://figshare.com/), [GitHub](https://github.com/) or [GitLab](https://about.gitlab.com/)?
+differ from services like [arXiv](https://arxiv.org/), [figshare](https://figshare.com/), [GitHub](https://github.com/) or [GitLab](https://about.gitlab.com/)?
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::

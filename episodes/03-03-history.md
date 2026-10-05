@@ -281,7 +281,7 @@ recent commit (`HEAD~1`), which is commit `f22b25e`. We use the `.` to mean all 
 So, to put it all together,
 here's how Git works in cartoon form:
 
-![https://figshare.com/articles/How_Git_works_a_cartoon/1328266](fig/git_staging.svg){alt='A diagram showing the entire git workflow: local changes are staged using git add, applied to the local repository using git commit, and can be restored from the repository using git checkout'}
+![https://figshare.com/articles/How_Git_works_a_cartoon/1328266](fig/git_staging.svg){alt='A diagram showing the entire Git workflow: local changes are staged using git add, applied to the local repository using git commit, and can be restored from the repository using git checkout'}
 
 
 The fact that files can be reverted one by one

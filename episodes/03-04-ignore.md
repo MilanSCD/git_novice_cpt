@@ -262,7 +262,7 @@ pictures/*              # ignore everything in pictures folder
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Ignoring all data Files in a Directory
+## Ignoring All Data Files in a Directory
 
 Assuming you have an empty .gitignore file, and given a directory structure that looks like:
 
@@ -293,7 +293,7 @@ The file `pictures/data/location/gps/info.txt` will not be ignored.
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Ignoring all data Files in the repository
+## Ignoring All Data Files in the Repository
 
 Let us assume you have many `.csv` files in different subdirectories of your repository.
 For example, you might have:

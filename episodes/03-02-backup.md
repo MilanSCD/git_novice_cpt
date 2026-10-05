@@ -49,7 +49,7 @@ explanation of why the repository needs to be empty.
 As soon as the repository is created, GitHub displays a page with a URL and some
 information on how to configure your local repository:
 
-![](fig/github-create-repo-03.png){alt='The summary page displayed by GitHub after a new repository has been created. It contains instructions for configuring the new GitHub repository as a git remote'}
+![](fig/github-create-repo-03.png){alt='The summary page displayed by GitHub after a new repository has been created. It contains instructions for configuring the new GitHub repository as a Git remote'}
 
 This effectively does the following on GitHub's servers:
 
@@ -97,7 +97,7 @@ Make sure to use the URL for your repository rather than Alfredo's: the only
 difference should be your username instead of `alflin`.
 
 `origin` is a local name used to refer to the remote repository. It could be called
-anything, but `origin` is a convention that is often used by default in git
+anything, but `origin` is a convention that is often used by default in Git
 and GitHub, so it's helpful to stick with this unless there's a reason not to.
 
 We can check that the command has worked by running `git remote -v`:
@@ -219,7 +219,7 @@ afterwards!
 
 ## Uploading files directly in GitHub browser
 
-Github also allows you to skip the command line and upload files directly to
+GitHub also allows you to skip the command line and upload files directly to
 your repository without having to leave the browser. There are two options.
 First you can click the "Upload files" button in the toolbar at the top of the
 file tree. Or, you can drag and drop files from your desktop onto the file
@@ -306,7 +306,7 @@ From https://github.com/alflin/recipes
 fatal: refusing to merge unrelated histories
 ```
 
-You can force git to merge the two repositories with the option `--allow-unrelated-histories`.
+You can force Git to merge the two repositories with the option `--allow-unrelated-histories`.
 Be careful when you use this option and carefully examine the contents of local and remote
 repositories before merging.
 

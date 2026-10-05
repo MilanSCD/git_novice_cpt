@@ -37,7 +37,7 @@ $ git config --global user.email "a.linguini@ratatouille.fr"
 Please use your own name and email address instead of Alfredo's. This user name and email will be associated with your subsequent Git activity,
 which means that any changes pushed to
 [GitHub](https://github.com/),
-[BitBucket](https://bitbucket.org/),
+[Bitbucket](https://bitbucket.org/),
 [GitLab](https://gitlab.com/) or
 another Git host server
 after this lesson will include this information.
@@ -100,7 +100,7 @@ $ git config --global init.defaultBranch main
 Source file changes are associated with a "branch."
 Don't worry too much about what this means right now - we will get to that later!
 By default, Git will create a branch called `master`
-when you create a new repository with `git init` (as explained in the next Episode). This term evokes
+when you create a new repository with `git init` (as explained in the next episode). This term evokes
 the racist practice of human slavery and the
 [software development community](https://github.com/github/renaming)  has moved to adopt
 more inclusive language.

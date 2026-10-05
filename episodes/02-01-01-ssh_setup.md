@@ -6,7 +6,7 @@ exercises: 2
 ::::::::::::::::::::::::::::::::::::::: objectives
 
 - Understand how to setup SSH keys
-- Setup SSH keys for Github
+- Setup SSH keys for GitHub
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -25,7 +25,7 @@ We are going to set up the method that is commonly used by many different servic
 
 SSH uses what is called a key pair. This is two keys that work together to validate access. One key is publicly known and called the public key, and the other key called the private key is kept private. Very descriptive names.
 
-You can think of the public key as a padlock, and only you have the key (the private key) to open it. You use the public key where you want a secure method of communication, such as your GitHub account.  You give this padlock, or public key, to GitHub and say "lock the communications to my account with this so that only computers that have my private key can unlock communications and send git commands as my GitHub account."
+You can think of the public key as a padlock, and only you have the key (the private key) to open it. You use the public key where you want a secure method of communication, such as your GitHub account.  You give this padlock, or public key, to GitHub and say "lock the communications to my account with this so that only computers that have my private key can unlock communications and send Git commands as my GitHub account."
 
 What we will do now is the minimum required to set up the SSH keys and add the public key to a GitHub account.
 

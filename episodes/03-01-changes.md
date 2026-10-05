@@ -27,11 +27,11 @@ Files in the repository directory are either tracked or untracked.
 
 ### Tracked and untracked files
 
-![File system diagram. The working tree files you see consist of files in the git HEAD, staged modifications, unstaged modifications and untracked files](fig/git_filesystem_diagram.svg)
+![File system diagram. The working tree files you see consist of files in the Git HEAD, staged modifications, unstaged modifications and untracked files](fig/git_filesystem_diagram.svg)
 
 
-Untracked files are files in the directory which have not yet been added to the git repository and git will not be able to track changes in these files.
-however, git is aware of them: they will show up as untracked in a `git status` output.
+Untracked files are files in the directory which have not yet been added to the Git repository and Git will not be able to track changes in these files.
+However, Git is aware of them: they will show up as untracked in a `git status` output.
 
 Tracked files are files which have been added to the repository. Git will check to see if these files have been modified relative to the last commit (restore point).
 Files only have to be committed once to be tracked from that point onwards.
@@ -42,21 +42,21 @@ Modified files are themselves either "unstaged", meaning they have not been mark
 
 When we use `git status`, we can see which files are in each state.
 
-![git state diagram. git commands which change the state are shown as arrows. commands used in the modify add commit cycle are shown with their inverses. Note that commands from the staged and commited states apply to all the files in that state unless specified.](fig/git_modify_add_commit_cycle_diagram.png)
+![Git state diagram. Git commands which change the state are shown as arrows. commands used in the modify add commit cycle are shown with their inverses. Note that commands from the staged and commited states apply to all the files in that state unless specified.](fig/git_modify_add_commit_cycle_diagram.png)
 
 ::::::::: callout
 ### .gitignore
-Some files we explicitly choose not to track. They could be files generated from tests or sensitive things we don't want to share. To keep them untracked, we list them in a `.gitignore` file, which tells git to ignore them. We usually create this file at the start of a repository and update it as we go along. When files which are listed in the `.gitignore` are modified, the changes won't be shown in `git status` and cannot be staged or committed unless forced with additional commands.
+Some files we explicitly choose not to track. They could be files generated from tests or sensitive things we don't want to share. To keep them untracked, we list them in a `.gitignore` file, which tells Git to ignore them. We usually create this file at the start of a repository and update it as we go along. When files which are listed in the `.gitignore` are modified, the changes won't be shown in `git status` and cannot be staged or committed unless forced with additional commands.
 :::::::::
 
-Making changes and tracking them in git follows a 3-step cycle:
+Making changes and tracking them in Git follows a 3-step cycle:
 
 ### 1 Modify
 - make a change like making a new file or editing a paragraph
 - this may include multiple files
 
 ### 2 Add
-- tell git to bundle this modification as part of the next "save"
+- tell Git to bundle this modification as part of the next "save"
 - multiple modifications or files can be added to this
 - we call this bundle the "staging area". Files are "staged" using the `git add <file>` command
 - only staged modifications can be part of a commit
@@ -64,7 +64,7 @@ Making changes and tracking them in git follows a 3-step cycle:
 
 ### 3 Commit
 
-- tell git to save the set of modifications we previously added, and create a new restore point ("commit")
+- tell Git to save the set of modifications we previously added, and create a new restore point ("commit")
 - a message is added to describe the logical change from the previous point
 - the message is written as an imperative by convention eg. `git commit -m "add config file"`
 
@@ -77,7 +77,7 @@ The idea of this cycle is that we should only create commits (restore points) fo
 
 We can then build up our project using this cycle with a new commit each time we make a logical change. Each commit is labelled with the commit message and a hash code that uniquely identifies it. This builds what we call the "history": the chain of commits which describe each step we took to get to the current version. We can view this history using the `git log` command.
 
-![Simple git history. Each commit adds modifications to the last one. The branch "main" is just a label pointing to commit C4. "HEAD" is also just a label showing what is currently in the file system. We will see how we can add branches later.](fig/git_simple_history_diagram.png)
+![Simple Git history. Each commit adds modifications to the last one. The branch "main" is just a label pointing to commit C4. "HEAD" is also just a label showing what is currently in the file system. We will see how we can add branches later.](fig/git_simple_history_diagram.png)
 
 :::::::::::::::::::::::::::: challenge
 
@@ -149,7 +149,7 @@ type in instructions like:
 two steps forward
 ```
 
-then use the git commands to track and stage the file.
+then use the Git commands to track and stage the file.
 
 confirm the change of state with `git status`
 

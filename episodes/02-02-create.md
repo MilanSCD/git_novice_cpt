@@ -59,9 +59,9 @@ If we ever delete the `.git` subdirectory,
 we will lose the project's history.
 
 You only have to deal with the files in the project as normal and will never have to touch the .git subdirectory
-git will handle what goes in there for you, so don't touch it!
+Git will handle what goes in there for you, so don't touch it!
 
-We can now start using one of the most important git commands, which is particularly helpful to beginners. `git status` tells us the status of our project, and better, a list of changes in the project and options on what to do with those changes. We can use it as often as we want, whenever we want to understand what is going on.
+We can now start using one of the most important Git commands, which is particularly helpful to beginners. `git status` tells us the status of our project, and better, a list of changes in the project and options on what to do with those changes. We can use it as often as we want, whenever we want to understand what is going on.
 
 ```bash
 $ git status
