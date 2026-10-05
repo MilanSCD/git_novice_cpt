@@ -66,7 +66,7 @@ Making changes and tracking them in git follows a 3-step cycle:
 
 - tell git to save the set of modifications we previously added, and create a new restore point ("commit")
 - a message is added to describe the logical change from the previous point
-- the message is written as an imperative by convention eg. `git commit -m add config file`
+- the message is written as an imperative by convention eg. `git commit -m "add config file"`
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: discussion
 ### Atomic Commits
