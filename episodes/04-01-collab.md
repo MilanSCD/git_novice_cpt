@@ -181,7 +181,7 @@ Fast-forward
 Now the three repositories (Owner's local, Collaborator's local, and Owner's on
 GitHub) are back in sync.
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+:::::::::::::::::::::::::::::::::::::::::  challenge
 
 ## A Basic Collaborative Workflow
 
@@ -198,19 +198,24 @@ It is better to make many commits with smaller changes rather than
 of one commit with massive changes: small commits are easier to
 read and review.
 
+:::solution
+:::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::::::challenge
 
 ## Switch Roles and Repeat
 
 Switch roles and repeat the whole process.
 
+:::solution
+
+:::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::::::challenge
 
 ## Review Changes
 
