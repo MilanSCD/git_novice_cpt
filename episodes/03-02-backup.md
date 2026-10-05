@@ -336,54 +336,6 @@ To https://github.com/alflin/recipes.git
  * [new branch]      main -> main
 ```
 
-:::::::::::::::::::::::::::::::::::::::::  callout
-
-## Proxy
-
-If the network you are connected to uses a proxy, there is a chance that your
-last command failed with "Could not resolve hostname" as the error message. To
-solve this issue, you need to tell Git about the proxy:
-
-```bash
-$ git config --global http.proxy http://user:password@proxy.url
-$ git config --global https.proxy https://user:password@proxy.url
-```
-
-When you connect to another network that doesn't use a proxy, you will need to
-tell Git to disable the proxy using:
-
-```bash
-$ git config --global --unset http.proxy
-$ git config --global --unset https.proxy
-```
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::::  callout
-
-## Password Managers
-
-If your operating system has a password manager configured, `git push` will
-try to use it when it needs your username and password.  For example, this
-is the default behavior for Git Bash on Windows. If you want to type your
-username and password at the terminal instead of using a password manager,
-type:
-
-```bash
-$ unset SSH_ASKPASS
-```
-
-in the terminal, before you run `git push`.  Despite the name, [Git uses
-`SSH_ASKPASS` for all credential
-entry](https://git-scm.com/docs/gitcredentials#_requesting_credentials), so
-you may want to unset `SSH_ASKPASS` whether you are using Git via SSH or
-https.
-
-You may also want to add `unset SSH_ASKPASS` at the end of your `~/.bashrc`
-to make Git default to using the terminal for usernames and passwords.
-
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Our local and remote repositories are now in this state:
 
