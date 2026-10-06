@@ -27,7 +27,7 @@ Files in the repository directory are either tracked or untracked.
 
 ### Tracked and untracked files
 
-![File system diagram. The working tree files you see consist of files in the Git HEAD, staged modifications, unstaged modifications and untracked files](fig/git_filesystem_diagram.svg)
+![File system diagram. The working tree files you see consist of files in the Git HEAD, staged modifications, unstaged modifications and untracked files](fig/git_filesystem_diagram.svg){alt="File System Diagram using Git."}
 
 
 Untracked files are files in the directory which have not yet been added to the Git repository and Git will not be able to track changes in these files.
@@ -42,7 +42,7 @@ Modified files are themselves either "unstaged", meaning they have not been mark
 
 When we use `git status`, we can see which files are in each state.
 
-![Git state diagram. Git commands which change the state are shown as arrows. commands used in the modify add commit cycle are shown with their inverses. Note that commands from the staged and commited states apply to all the files in that state unless specified.](fig/git_modify_add_commit_cycle_diagram.png)
+![Git state diagram. Git commands which change the state are shown as arrows. commands used in the modify add commit cycle are shown with their inverses. Note that commands from the staged and commited states apply to all the files in that state unless specified.](fig/git_modify_add_commit_cycle_diagram.png){alt="Git state diagram, showing how commands change the state"}
 
 ::::::::: callout
 ### .gitignore
@@ -77,7 +77,7 @@ The idea of this cycle is that we should only create commits (restore points) fo
 
 We can then build up our project using this cycle with a new commit each time we make a logical change. Each commit is labelled with the commit message and a hash code that uniquely identifies it. This builds what we call the "history": the chain of commits which describe each step we took to get to the current version. We can view this history using the `git log` command.
 
-![Simple Git history. Each commit adds modifications to the last one. The branch "main" is just a label pointing to commit C4. "HEAD" is also just a label showing what is currently in the file system. We will see how we can add branches later.](fig/git_simple_history_diagram.png)
+![Simple Git history. Each commit adds modifications to the last one. The branch "main" is just a label pointing to commit C4. "HEAD" is also just a label showing what is currently in the file system. We will see how we can add branches later.](fig/git_simple_history_diagram.png){alt="simple Git history diagram showing 4 sequential commits."}
 
 :::::::::::::::::::::::::::: challenge
 
@@ -112,7 +112,7 @@ We can commit them like so: `git commit -m "change ingredient x to ingredient y"
 
 Making changes and creating commits can seem daunting at first. It's easy to mix up what files to add to a commit, and mistakes happen all the time. We don't want these mistakes to also be saved indefinitely. The good news is that we can undo any of the steps in the cycle.
 
-![common git restore commands](fig/git_restore_comparison_diagram.svg)
+![common git restore commands](fig/git_restore_comparison_diagram.svg){alt="Git restore commands."}
 
 Within the modify, add, commit cycle, we can undo any state changes and invert any command:
 
