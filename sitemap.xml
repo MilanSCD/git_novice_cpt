@@ -1,16 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://swcarpentry.github.io/git-novice/01-01-basics.html</loc>
+  </url>
+  <url>
     <loc>https://swcarpentry.github.io/git-novice/01-basics.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/02-01-01-ssh_setup.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/02-01-setup.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/02-02-create.html</loc>
   </url>
   <url>
     <loc>https://swcarpentry.github.io/git-novice/02-setup.html</loc>
   </url>
   <url>
+    <loc>https://swcarpentry.github.io/git-novice/03-01-changes.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/03-02-backup.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/03-03-history.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/03-04-ignore.html</loc>
+  </url>
+  <url>
     <loc>https://swcarpentry.github.io/git-novice/03-create.html</loc>
   </url>
   <url>
+    <loc>https://swcarpentry.github.io/git-novice/04-01-collab.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/04-02-branching.html</loc>
+  </url>
+  <url>
     <loc>https://swcarpentry.github.io/git-novice/04-changes.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/05-01-open.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/05-02-licensing.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/05-03-citation.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/05-04-hosting.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/05-05-supplemental-rstudio.html</loc>
   </url>
   <url>
     <loc>https://swcarpentry.github.io/git-novice/05-history.html</loc>
@@ -64,16 +109,61 @@
     <loc>https://swcarpentry.github.io/git-novice/index.html</loc>
   </url>
   <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/01-01-basics.html</loc>
+  </url>
+  <url>
     <loc>https://swcarpentry.github.io/git-novice/instructor/01-basics.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/02-01-01-ssh_setup.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/02-01-setup.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/02-02-create.html</loc>
   </url>
   <url>
     <loc>https://swcarpentry.github.io/git-novice/instructor/02-setup.html</loc>
   </url>
   <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/03-01-changes.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/03-02-backup.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/03-03-history.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/03-04-ignore.html</loc>
+  </url>
+  <url>
     <loc>https://swcarpentry.github.io/git-novice/instructor/03-create.html</loc>
   </url>
   <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/04-01-collab.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/04-02-branching.html</loc>
+  </url>
+  <url>
     <loc>https://swcarpentry.github.io/git-novice/instructor/04-changes.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/05-01-open.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/05-02-licensing.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/05-03-citation.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/05-04-hosting.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/git-novice/instructor/05-05-supplemental-rstudio.html</loc>
   </url>
   <url>
     <loc>https://swcarpentry.github.io/git-novice/instructor/05-history.html</loc>

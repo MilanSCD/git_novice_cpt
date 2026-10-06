@@ -40,8 +40,11 @@
   <div class="container-fluid top-nav-container">
     <div class="col-md-8">
       <div class="large-logo">
-        <img id="swc-logo" alt="Software Carpentry" src="assets/images/software-logo.svg">
-</div>
+        <a href="index.html">
+        <img id="swc-logo" alt="Software Carpentry" src="assets/images/software-logo.svg"></a>
+
+
+      </div>
     </div>
     <div class="selector-container">
       <menu class="theme-selector" id="theme-selector-menu">
@@ -87,8 +90,9 @@
       <span class="menu-title">Menu</span>
     </button>
     <div class="nav-logo">
-      <img class="small-logo" alt="Software Carpentry" src="assets/images/software-logo-sm.svg">
-</div>
+      <a href="index.html">
+      <img class="small-logo" alt="Software Carpentry" src="assets/images/software-logo-sm.svg"></a>
+    </div>
     <div class="lesson-title-md">
       Version Control with Git
     </div>
@@ -134,7 +138,7 @@
       </fieldset>
     </form>
     -->
-    <a id="search-button" class="btn btn-primary" href="aio.html" role="button" aria-label="Search the All In One page">Search the All In One page</a>
+    <a id="search-button-nav" class="btn btn-primary" href="aio.html" role="button" aria-label="Search the All In One page">Search the All In One page</a>
   </div>
 <!--/div.container-fluid -->
 </nav><div class="container">
@@ -146,6 +150,9 @@
           <i class="search-icon" data-feather="x" role="img"></i>
         </button>
         <div class="sidebar-inner">
+          <div class="row mobile-row" id="theme-row-mobile">
+            <a id="search-button-sidebar" class="btn btn-primary" href="aio.html" role="button" aria-label="Search the All In One page">Search the All In One page</a>
+          </div>
           <div class="row mobile-row" id="theme-row-mobile">
             <menu class="col theme-selector" id="theme-selector-sidebar">
 <li class="nav-item dropdown theme-button-list" id="theme-button-list-sidebar">
@@ -194,6 +201,7 @@
 <!--/div.accordion-item-->
                 </div>
 <!--/div.accordion-flush-->
+
               </div>
 <!--div.sidenav-view-selector -->
             </div>
@@ -228,7 +236,7 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="01-basics.html">1. Automated Version Control</a>
+        <a href="01-01-basics.html">1. Automated Version Control</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -240,7 +248,7 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="02-setup.html">2. Setting Up Git</a>
+        <a href="02-01-setup.html">2. Setting Up Git</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -252,7 +260,7 @@
 <div class="accordion accordion-flush" id="accordionFlush4">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading4">
-        <a href="03-create.html">3. Creating a Repository</a>
+        <a href="02-01-01-ssh_setup.html">3. SSH Setup</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -264,7 +272,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="04-changes.html">4. Tracking Changes</a>
+        <a href="02-02-create.html">4. Creating a Repository</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -276,7 +284,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="05-history.html">5. Exploring History</a>
+        <a href="03-01-changes.html">5. Making Changes</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -288,7 +296,7 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="06-ignore.html">6. Ignoring Things</a>
+        <a href="03-02-backup.html">6. Backing it up</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -300,7 +308,7 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="07-github.html">7. Remotes in GitHub</a>
+        <a href="03-03-history.html">7. Exploring History</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -312,7 +320,7 @@
 <div class="accordion accordion-flush" id="accordionFlush9">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading9">
-        <a href="08-collab.html">8. Collaborating</a>
+        <a href="03-04-ignore.html">8. Ignoring Things</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -324,7 +332,7 @@
 <div class="accordion accordion-flush" id="accordionFlush10">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading10">
-        <a href="09-conflict.html">9. Conflicts</a>
+        <a href="04-01-collab.html">9. Collaborating</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -336,7 +344,7 @@
 <div class="accordion accordion-flush" id="accordionFlush11">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading11">
-        <a href="10-open.html">10. Open Science</a>
+        <a href="04-02-branching.html">10. Branching</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -348,7 +356,7 @@
 <div class="accordion accordion-flush" id="accordionFlush12">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading12">
-        <a href="11-licensing.html">11. Licensing</a>
+        <a href="05-01-open.html">11. Open Science</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -360,7 +368,7 @@
 <div class="accordion accordion-flush" id="accordionFlush13">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading13">
-        <a href="12-citation.html">12. Citation</a>
+        <a href="05-02-licensing.html">12. Licensing</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -372,7 +380,7 @@
 <div class="accordion accordion-flush" id="accordionFlush14">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading14">
-        <a href="13-hosting.html">13. Hosting</a>
+        <a href="05-03-citation.html">13. Citation</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -384,7 +392,19 @@
 <div class="accordion accordion-flush" id="accordionFlush15">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading15">
-        <a href="14-supplemental-rstudio.html">14. Supplemental: Using Git from RStudio</a>
+        <a href="05-04-hosting.html">14. Hosting</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush16">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading16">
+        <a href="05-05-supplemental-rstudio.html">15. Supplemental: Using Git from RStudio</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -398,6 +418,34 @@
             </div>
 
             <hr class="half-width">
+<div class="accordion accordion-flush" id="accordion-links-toggle">
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading-links-toggle">
+                  <button class="accordion-button collapsed" id="links" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-links-toggle" aria-expanded="false" aria-controls="flush-collapse-links-toggle">
+                    LINKS
+                  </button>
+                </h2>
+                <div id="flush-collapse-links-toggle" class="accordion-collapse show collapse" data-bs-parent="#accordion-links-toggle">
+                    <div class="accordion-body">
+                        <ul>
+<li>
+                            <a href="key-points.html">Key Points</a>
+                            </li>
+                            <li>
+                            <a href="reference.html#glossary">Glossary</a>
+                            </li>
+                            <li>
+                            <a href="profiles.html">Learner Profiles</a>
+                            </li>
+                        </ul>
+</div>
+                </div>
+                </div>
+<!--/div.accordion-item-->
+            </div>
+<!--/div.accordion-flush-->
+
+            <hr class="half-width">
 <div class="accordion accordion-flush lesson-resources" id="accordion-resources-toggle">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-heading-resources-toggle">
@@ -408,16 +456,7 @@
                 <div id="flush-collapse-resources-toggle" class="accordion-collapse collapse" data-bs-parent="#accordion-resources-toggle">
                   <div class="accordion-body">
                     <ul>
-<li>
-                        <a href="key-points.html">Key Points</a>
-                      </li>
-                      <li>
-                        <a href="reference.html#glossary">Glossary</a>
-                      </li>
-                      <li>
-                        <a href="profiles.html">Learner Profiles</a>
-                      </li>
-                      <li><a href="discuss.html">Discussion</a></li>
+<li><a href="discuss.html">Discussion</a></li>
 <li><a href="reference.html">Git Cheatsheets for Quick Reference</a></li>
                     </ul>
 </div>
@@ -854,7 +893,7 @@ web-hosted private repositories.</p>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/" class="external-link">sandpaper (0.20.2)</a>, <a href="https://github.com/carpentries/pegboard/tree/" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/" class="external-link">varnish (1.1.1)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/" class="external-link">sandpaper (0.21.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/" class="external-link">varnish (1.1.3)</a></p>
 		</div>
 		</footer>
 </div> <!-- / div.container -->
@@ -877,8 +916,8 @@ web-hosted private repositories.</p>
   "url": "https://swcarpentry.github.io/git-novice/instructor-notes.html",
   "identifier": "https://swcarpentry.github.io/git-novice/instructor-notes.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2026-08-18",
-  "datePublished": "2026-08-18"
+  "dateModified": "2026-10-06",
+  "datePublished": "2026-10-06"
 }
 
   </script><script>
@@ -887,7 +926,7 @@ web-hosted private repositories.</p>
           var _paq = window._paq = window._paq || [];
           /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
           _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-          _paq.push(["setDomains", ["*.lessons.carpentries.org","*.datacarpentry.github.io","*.datacarpentry.org","*.librarycarpentry.github.io","*.librarycarpentry.org","*.swcarpentry.github.io", "*.carpentries.github.io"]]);
+          _paq.push(["setDomains", ["*.lessons.carpentries.org","*.datacarpentry.github.io","*.datacarpentry.org","*.hpc-carpentry.github.io","*.hpc-carpentry.org","*.librarycarpentry.github.io","*.librarycarpentry.org","*.swcarpentry.github.io", "*.carpentries.github.io"]]);
           _paq.push(["setDoNotTrack", true]);
           _paq.push(["disableCookies"]);
           _paq.push(["trackPageView"]);

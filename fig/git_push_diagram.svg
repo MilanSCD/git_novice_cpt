@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1020" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="2000" height="1020" fill="#f7f7f9"/>
+
+  <defs>
+    <marker id="arrow-dark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#374151"/>
+    </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9ca3af"/>
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0d9488"/>
+    </marker>
+    <marker id="arrow-push" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  <!-- divider between the two snapshots -->
+  <line x1="1000" y1="40" x2="1000" y2="1000" stroke="#9ca3af" stroke-width="3" stroke-dasharray="14,10"/>
+
+  <!-- the push action, connecting the two snapshots -->
+  <line x1="945" y1="460" x2="1055" y2="460" stroke="#2563eb" stroke-width="6" marker-end="url(#arrow-push)"/>
+  <rect x="915" y="415" width="170" height="50" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="1000" y="447" text-anchor="middle" font-size="24" font-weight="700" fill="#2563eb">git push</text>
+
+  <!-- ===================================================================== -->
+  <!-- BEFORE (left panel, PX = 40)                                           -->
+  <!-- ===================================================================== -->
+  <text x="60" y="60" font-size="34" font-weight="700" fill="#1f2937">Before: git push</text>
+
+  <!-- local repository -->
+  <rect x="60" y="100" width="880" height="480" rx="20" fill="#eef0f2" stroke="#6b7280" stroke-width="4"/>
+  <text x="90" y="150" font-size="26" font-weight="700" fill="#1f2937">Local Repository</text>
+
+  <rect x="600" y="220" width="140" height="55" rx="10" fill="#f5f0ff" stroke="#7c3aed" stroke-width="4"/>
+  <text x="670" y="256" text-anchor="middle" font-size="22" font-weight="700" fill="#5b21b6">HEAD</text>
+  <line x1="670" y1="275" x2="670" y2="290" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrow-purple)"/>
+
+  <rect x="600" y="295" width="140" height="55" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="4"/>
+  <text x="670" y="331" text-anchor="middle" font-size="22" font-weight="700" fill="#15803d">main</text>
+  <line x1="670" y1="350" x2="670" y2="400" stroke="#16a34a" stroke-width="4" marker-end="url(#arrow-green)"/>
+
+  <rect x="250" y="295" width="160" height="55" rx="10" fill="#f0fdfa" stroke="#0d9488" stroke-width="4"/>
+  <text x="330" y="331" text-anchor="middle" font-size="19" font-weight="700" fill="#0f766e">origin/main</text>
+  <line x1="330" y1="350" x2="330" y2="400" stroke="#0d9488" stroke-width="4" marker-end="url(#arrow-teal)"/>
+
+  <line x1="215" y1="460" x2="270" y2="460" stroke="#374151" stroke-width="5" marker-end="url(#arrow-dark)"/>
+  <line x1="385" y1="460" x2="440" y2="460" stroke="#374151" stroke-width="5" marker-end="url(#arrow-dark)"/>
+  <line x1="555" y1="460" x2="610" y2="460" stroke="#374151" stroke-width="5" marker-end="url(#arrow-dark)"/>
+
+  <g text-anchor="middle" font-size="28" font-weight="700" fill="#1f2937">
+    <circle cx="160" cy="460" r="55" fill="#d9e9fb" stroke="#2f6fde" stroke-width="5"/>
+    <text x="160" y="470">C1</text>
+    <circle cx="330" cy="460" r="55" fill="#d9e9fb" stroke="#2f6fde" stroke-width="5"/>
+    <text x="330" y="470">C2</text>
+    <circle cx="500" cy="460" r="55" fill="#d9e9fb" stroke="#2f6fde" stroke-width="5"/>
+    <text x="500" y="470">C3</text>
+    <circle cx="670" cy="460" r="55" fill="#d9e9fb" stroke="#2f6fde" stroke-width="5"/>
+    <text x="670" y="470">C4</text>
+  </g>
+  <text x="160" y="550" text-anchor="middle" font-size="20" fill="#374151">(initial commit)</text>
+
+  <!-- remote repository: still missing C3 and C4 -->
+  <rect x="60" y="620" width="880" height="370" rx="20" fill="#eef0f2" stroke="#6b7280" stroke-width="4"/>
+  <text x="90" y="670" font-size="26" font-weight="700" fill="#1f2937">Remote Repository (origin)</text>
+
+  <rect x="260" y="700" width="140" height="55" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="4"/>
+  <text x="330" y="736" text-anchor="middle" font-size="22" font-weight="700" fill="#15803d">main</text>
+  <line x1="330" y1="755" x2="330" y2="800" stroke="#16a34a" stroke-width="4" marker-end="url(#arrow-green)"/>
+
+  <line x1="215" y1="860" x2="270" y2="860" stroke="#374151" stroke-width="5" marker-end="url(#arrow-dark)"/>
+  <line x1="385" y1="860" x2="440" y2="860" stroke="#9ca3af" stroke-width="4" stroke-dasharray="10,8" marker-end="url(#arrow-gray)"/>
+  <line x1="555" y1="860" x2="610" y2="860" stroke="#9ca3af" stroke-width="4" stroke-dasharray="10,8" marker-end="url(#arrow-gray)"/>
+
+  <g text-anchor="middle" font-size="28" font-weight="700" fill="#1f2937">
+    <circle cx="160" cy="860" r="55" fill="#d9e9fb" stroke="#2f6fde" stroke-width="5"/>
+    <text x="160" y="870">C1</text>
+    <circle cx="330" cy="860" r="55" fill="#d9e9fb" stroke="#2f6fde" stroke-width="5"/>
+    <text x="330" y="870">C2</text>
+  </g>
+  <circle cx="500" cy="860" r="55" fill="#f3f4f6" stroke="#9ca3af" stroke-width="5" stroke-dasharray="10,8"/>
+  <text x="500" y="870" text-anchor="middle" font-size="28" font-weight="700" fill="#6b7280">C3</text>
+  <circle cx="670" cy="860" r="55" fill="#f3f4f6" stroke="#9ca3af" stroke-width="5" stroke-dasharray="10,8"/>
+  <text x="670" y="870" text-anchor="middle" font-size="28" font-weight="700" fill="#6b7280">C4</text>
+
+  <text x="160" y="950" text-anchor="middle" font-size="20" fill="#374151">(initial commit)</text>
+  <text x="585" y="950" text-anchor="middle" font-size="20" fill="#6b7280">(not pushed yet)</text>
+
+  <!-- ===================================================================== -->
+  <!-- AFTER (right panel, PX = 1040)                                         -->
+  <!-- ===================================================================== -->
+  <text x="1060" y="60" font-size="34" font-weight="700" fill="#1f2937">After: git push</text>
+
+  <!-- local repository -->
+  <rect x="1060" y="100" width="880" height="480" rx="20" fill="#eef0f2" stroke="#6b7280" stroke-width="4"/>
+  <text x="1090" y="150" font-size="26" font-weight="700" fill="#1f2937">Local Repository</text>
+
+  <rect x="1600" y="220" width="140" height="55" rx="10" fill="#f5f0ff" stroke="#7c3aed" stroke-width="4"/>
+  <text x="1670" y="256" text-anchor="middle" font-size="22" font-weight="700" fill="#5b21b6">HEAD</text>
+  <line x1="1670" y1="275" x2="1670" y2="290" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrow-purple)"/>
+
+  <rect x="1600" y="295" width="140" height="55" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="4"/>
+  <text x="1670" y="331" text-anchor="middle" font-size="22" font-weight="700" fill="#15803d">main</text>
+  <line x1="1670" y1="350" x2="1670" y2="400" stroke="#16a34a" stroke-width="4" marker-end="url(#arrow-green)"/>
+
+  <rect x="1760" y="295" width="160" height="55" rx="10" fill="#f0fdfa" stroke="#0d9488" stroke-width="4"/>
+  <text x="1840" y="331" text-anchor="middle" font-size="19" font-weight="700" fill="#0f766e">origin/main</text>
+  <line x1="1840" y1="350" x2="1709" y2="421" stroke="#0d9488" stroke-width="4" marker-end="url(#arrow-teal)"/>
+
+  <line x1="1215" y1="460" x2="1270" y2="460" stroke="#374151" stroke-width="5" marker-end="url(#arrow-dark)"/>
+  <line x1="1385" y1="460" x2="1440" y2="460" stroke="#374151" stroke-width="5" marker-end="url(#arrow-dark)"/>
+  <line x1="1555" y1="460" x2="1610" y2="460" stroke="#374151" stroke-width="5" marker-end="url(#arrow-dark)"/>
+
+  <g text-anchor="middle" font-size="28" font-weight="700" fill="#1f2937">
+    <circle cx="1160" cy="460" r="55" fill="#d9e9fb" stroke="#2f6fde" stroke-width="5"/>
+    <text x="1160" y="470">C1</text>
+    <circle cx="1330" cy="460" r="55" fill="#d9e9fb" stroke="#2f6fde" stroke-width="5"/>
+    <text x="1330" y="470">C2</text>
+    <circle cx="1500" cy="460" r="55" fill="#d9e9fb" stroke="#2f6fde" stroke-width="5"/>
+    <text x="1500" y="470">C3</text>
+    <circle cx="1670" cy="460" r="55" fill="#d9e9fb" stroke="#2f6fde" stroke-width="5"/>
+    <text x="1670" y="470">C4</text>
+  </g>
+  <text x="1160" y="550" text-anchor="middle" font-size="20" fill="#374151">(initial commit)</text>
+
+  <!-- remote repository: now has C4 too -->
+  <rect x="1060" y="620" width="880" height="370" rx="20" fill="#eef0f2" stroke="#6b7280" stroke-width="4"/>
+  <text x="1090" y="670" font-size="26" font-weight="700" fill="#1f2937">Remote Repository (origin)</text>
+
+  <rect x="1600" y="700" width="140" height="55" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="4"/>
+  <text x="1670" y="736" text-anchor="middle" font-size="22" font-weight="700" fill="#15803d">main</text>
+  <line x1="1670" y1="755" x2="1670" y2="800" stroke="#16a34a" stroke-width="4" marker-end="url(#arrow-green)"/>
+
+  <line x1="1215" y1="860" x2="1270" y2="860" stroke="#374151" stroke-width="5" marker-end="url(#arrow-dark)"/>
+  <line x1="1385" y1="860" x2="1440" y2="860" stroke="#374151" stroke-width="5" marker-end="url(#arrow-dark)"/>
+  <line x1="1555" y1="860" x2="1610" y2="860" stroke="#374151" stroke-width="5" marker-end="url(#arrow-dark)"/>
+
+  <g text-anchor="middle" font-size="28" font-weight="700" fill="#1f2937">
+    <circle cx="1160" cy="860" r="55" fill="#d9e9fb" stroke="#2f6fde" stroke-width="5"/>
+    <text x="1160" y="870">C1</text>
+    <circle cx="1330" cy="860" r="55" fill="#d9e9fb" stroke="#2f6fde" stroke-width="5"/>
+    <text x="1330" y="870">C2</text>
+  </g>
+  <circle cx="1500" cy="860" r="55" fill="#eef5ff" stroke="#2563eb" stroke-width="6"/>
+  <text x="1500" y="870" text-anchor="middle" font-size="28" font-weight="700" fill="#1f2937">C3</text>
+  <circle cx="1670" cy="860" r="55" fill="#eef5ff" stroke="#2563eb" stroke-width="6"/>
+  <text x="1670" y="870" text-anchor="middle" font-size="28" font-weight="700" fill="#1f2937">C4</text>
+
+  <text x="1160" y="950" text-anchor="middle" font-size="20" fill="#374151">(initial commit)</text>
+  <text x="1585" y="950" text-anchor="middle" font-size="20" fill="#2563eb">(just received)</text>
+</svg>
