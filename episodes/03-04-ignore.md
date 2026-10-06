@@ -239,7 +239,7 @@ pictures/brownie
 
 How would you ignore all of the contents in the pictures folder, but not `pictures/pie`?
 
-Hint: think a bit about how you created an exception with the `!` operator
+Hint: Think a bit about how you created an exception with the `!` operator
 before.
 
 :::::::::::::::  solution
@@ -370,8 +370,8 @@ You want to keep them but you do not want to track them through `git`.
 
 ## Solution
 
-1. append either `log_*` or `log*` as a new entry in your .gitignore.
-2. track `log_01` using `git add -f log_01`.
+1. Append either `log_*` or `log*` as a new entry in your .gitignore.
+2. Track `log_01` using `git add -f log_01`.
   
   
 

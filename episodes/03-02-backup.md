@@ -141,7 +141,7 @@ To https://github.com/alflin/recipes.git
 
 Our local and remote repositories are now in sync.
 
-![in the general no conflict case, a git push adds your new commits to your remote branch so they are in sync](fig/git_push_diagram.svg)
+![In the general no conflict case, a git push adds your new commits to your remote branch so they are in sync](fig/git_push_diagram.svg)
 
 
 :::::::::::::::::::::::::::::::::::::::::  callout

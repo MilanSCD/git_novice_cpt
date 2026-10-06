@@ -21,9 +21,9 @@ When we use Git on a new computer for the first time,
 we need to configure a few things. Below are a few examples
 of configurations we will set as we get started with Git:
 
-- our name.
-- our email address.
-- and that we want to use these settings globally (i.e. for every project).
+- Our name.
+- Our email address.
+- And that we want to use these settings globally (i.e. for every project).
 
 On a command line, Git commands are written as `git verb options`,
 where `verb` is what we actually want to do and `options` is additional optional information which may be needed for the `verb`. So here is how

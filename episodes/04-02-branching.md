@@ -386,12 +386,12 @@ Your instructor will provide a list of independent changes.
 
 Examples might include:
 
-- adding ingredients
-- adding preparation steps
-- fixing spelling mistakes
-- adding cooking times
-- adding serving sizes
-- adding additional recipes
+- Adding ingredients
+- Adding preparation steps
+- Fixing spelling mistakes
+- Adding cooking times
+- Adding serving sizes
+- Adding additional recipes
 
 Between you and your partner, decide who will do what changes.
 Complete as many changes as possible, with each person having their own branch for their changes.

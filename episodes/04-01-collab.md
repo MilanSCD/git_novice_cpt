@@ -189,10 +189,10 @@ In practice, it is good to be sure that you have an updated version of the
 repository you are collaborating on, so you should `git pull` before making
 our changes. The basic collaborative workflow would be:
 
-- update your local repo with `git pull origin main`,
-- make your changes and stage them with `git add`,
-- commit your changes with `git commit -m`, and
-- upload the changes to GitHub with `git push origin main`
+- Update your local repo with `git pull origin main`,
+- Make your changes and stage them with `git add`,
+- Commit your changes with `git commit -m`, and
+- Upload the changes to GitHub with `git push origin main`
 
 It is better to make many commits with smaller changes rather than
 of one commit with massive changes: small commits are easier to

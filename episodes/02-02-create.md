@@ -87,8 +87,8 @@ Other repositories are not required to track subdirectories and doing this can l
 
 Separation is key:
 
-- unrelated projects should be version controlled separately in separate folders.
-- only relevant files should be in the repository directory and version controlled.
+- Unrelated projects should be version controlled separately in separate folders.
+- Only relevant files should be in the repository directory and version controlled.
 
 Also, note
 that the creation of the `recipes` directory and its initialisation as a

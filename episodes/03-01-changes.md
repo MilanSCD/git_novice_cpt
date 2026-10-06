@@ -52,21 +52,21 @@ Some files we explicitly choose not to track. They could be files generated from
 Making changes and tracking them in Git follows a 3-step cycle:
 
 ### 1 Modify
-- make a change like making a new file or editing a paragraph.
-- this may include multiple files.
+- Make a change like making a new file or editing a paragraph.
+- This may include multiple files.
 
 ### 2 Add
-- tell Git to bundle this modification as part of the next "save".
-- multiple modifications or files can be added to this.
-- we call this bundle the "staging area". Files are "staged" using the `git add <file>` command.
-- only staged modifications can be part of a commit.
-- if a file has been modified after it has been staged, the new modification has to be staged again to be included.
+- Tell Git to bundle this modification as part of the next "save".
+- Multiple modifications or files can be added to this.
+- We call this bundle the "staging area". Files are "staged" using the `git add <file>` command.
+- Only staged modifications can be part of a commit.
+- If a file has been modified after it has been staged, the new modification has to be staged again to be included.
 
 ### 3 Commit
 
-- tell Git to save the set of modifications we previously added, and create a new restore point ("commit").
-- a message is added to describe the logical change from the previous point.
-- the message is written as an imperative by convention eg. `git commit -m "add config file"`.
+- Tell Git to save the set of modifications we previously added, and create a new restore point ("commit").
+- A message is added to describe the logical change from the previous point.
+- The message is written as an imperative by convention eg. `git commit -m "add config file"`.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: discussion
 ### Atomic Commits
@@ -142,97 +142,97 @@ To undo the commit, we can use `git reset` with additional flags:
 
 Try creating a new file called `git_tango.md`
 
-type in instructions like:
+Type in instructions like:
 
 ```output
 # Git Tango
 two steps forward
 ```
 
-then use the Git commands to track and stage the file.
+Then use the Git commands to track and stage the file.
 
-confirm the change of state with `git status`
+Confirm the change of state with `git status`
 
-now unstage the file and confirm it again.
+Now unstage the file and confirm it again.
 
 From this point, confirm each step using `git status` and `git log`
 
 **Part 2: Three steps forward**
 
-modify the file and add another instruction.
+Modify the file and add another instruction.
 
-- use the commands to stage the new changes.
+- Use the commands to stage the new changes.
 
-- commit staged changes.
+- Commit staged changes.
 
-- confirm the changes with `git status` and `git log`.
+- Confirm the changes with `git status` and `git log`.
 
 
 
 
 **Part 3: One step back**
 
-modify the file and add an incorrect instruction.
+Modify the file and add an incorrect instruction.
 
-- use the commands to stage and commit the error.
+- Use the commands to stage and commit the error.
 
-- confirm the error with `git status` and `git log`.
+- Confirm the error with `git status` and `git log`.
 
-- undo the commit leaving modifications in the staging area.
+- Undo the commit leaving modifications in the staging area.
 
 
 
 **Part 4: One step forward two steps back**
 
-rename the commit and then unstage it.
+Rename the commit and then unstage it.
 
-- commit again with a different message.
+- Commit again with a different message.
 
-- undo the commit keeping modifications but unstaged.
+- Undo the commit keeping modifications but unstaged.
 
 
 **Part 5: Three more steps forward**
 
-correct the instruction in the file, then add and commit it.
+Correct the instruction in the file, then add and commit it.
 
 
 
 **Part 6: Three steps back**
 
-completely undo the commit so it's unchanged from Part 2.
+Completely undo the commit so it's unchanged from Part 2.
 
 
 :::::::::::::::::::::::: solution 
 ### Part 1
-use the commands `git add <file>` to stage a file.
-use `git status` to check it has been staged.
-use `git restore --staged <file>` to unstage the file.
-use `git status` to check it has been unstaged.
+Use the commands `git add <file>` to stage a file.
+Use `git status` to check it has been staged.
+Use `git restore --staged <file>` to unstage the file.
+Use `git status` to check it has been unstaged.
 ::::::::::::::::::::::::
 :::::::::::::::::::::::: solution
 ### Part 2
 
-modify the file then use `git add <file>` and `git commit -m "commit message"` to add a commit.
-use `git status` and `git log` to check the commit has been added.
+Modify the file then use `git add <file>` and `git commit -m "commit message"` to add a commit.
+Use `git status` and `git log` to check the commit has been added.
 ::::::::::::::::::::::::
 :::::::::::::::::::::::: solution
 ### Part 3
 
-initially same as Part 2.
-then to inverse use `git reset --soft`.
+Initially same as Part 2.
+Then to inverse use `git reset --soft`.
 ::::::::::::::::::::::::
 :::::::::::::::::::::::: solution
 ### Part 4
-use `git commit -m "new commit message"`.
-then to inverse and unstage `git reset --mixed`.
+Use `git commit -m "new commit message"`.
+Then to inverse and unstage `git reset --mixed`.
 ::::::::::::::::::::::::
 :::::::::::::::::::::::: solution
 ### Part 5
-same as Part 2.
+Same as Part 2.
 ::::::::::::::::::::::::
 :::::::::::::::::::::::: solution
 ### Part 6
-use `git reset --hard`.
+Use `git reset --hard`.
 
 
 :::::::::::::::::::::::::::::::::
