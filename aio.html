@@ -615,7 +615,7 @@ changes?</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul>
 <li><p>Recovering the excellent version is only possible if you created
@@ -1343,7 +1343,7 @@ untracked.</p>
 <div class="section level3">
 <h3 id="tracked-and-untracked-files">Tracked and untracked files<a class="anchor" aria-label="anchor" href="#tracked-and-untracked-files"></a>
 </h3>
-<figure><img src="fig/git_filesystem_diagram.svg" alt="File system diagram. The working tree files you see consist of files in the Git HEAD, staged modifications, unstaged modifications and untracked files" class="figure mx-auto d-block"><div class="figcaption">File system diagram. The working tree files you
+<figure><img src="fig/git_filesystem_diagram.svg" alt="File System Diagram using Git." class="figure mx-auto d-block"><div class="figcaption">File system diagram. The working tree files you
 see consist of files in the Git HEAD, staged modifications, unstaged
 modifications and untracked files</div>
 </figure><p>Untracked files are files in the directory which have not yet been
@@ -1363,7 +1363,7 @@ not been marked to be included in the next restore point (“commit”), or
 “staged”, meaning they will be included in the next commit.</p>
 <p>When we use <code>git status</code>, we can see which files are in
 each state.</p>
-<figure><img src="fig/git_modify_add_commit_cycle_diagram.png" alt="Git state diagram. Git commands which change the state are shown as arrows. commands used in the modify add commit cycle are shown with their inverses. Note that commands from the staged and commited states apply to all the files in that state unless specified." class="figure mx-auto d-block"><div class="figcaption">Git state diagram. Git commands which change the
+<figure><img src="fig/git_modify_add_commit_cycle_diagram.png" alt="Git state diagram, showing how commands change the state" class="figure mx-auto d-block"><div class="figcaption">Git state diagram. Git commands which change the
 state are shown as arrows. commands used in the modify add commit cycle
 are shown with their inverses. Note that commands from the staged and
 commited states apply to all the files in that state unless
@@ -1450,7 +1450,7 @@ commit message and a hash code that uniquely identifies it. This builds
 what we call the “history”: the chain of commits which describe each
 step we took to get to the current version. We can view this history
 using the <code>git log</code> command.</p>
-<figure><img src="fig/git_simple_history_diagram.png" alt="Simple Git history. Each commit adds modifications to the last one. The branch “main” is just a label pointing to commit C4. “HEAD” is also just a label showing what is currently in the file system. We will see how we can add branches later." class="figure mx-auto d-block"><div class="figcaption">Simple Git history. Each commit adds
+<figure><img src="fig/git_simple_history_diagram.png" alt="simple Git history diagram showing 4 sequential commits." class="figure mx-auto d-block"><div class="figcaption">Simple Git history. Each commit adds
 modifications to the last one. The branch “main” is just a label
 pointing to commit C4. “HEAD” is also just a label showing what is
 currently in the file system. We will see how we can add branches
@@ -1491,7 +1491,7 @@ so: <code>git commit -m "change ingredient x to ingredient y"</code></p>
 easy to mix up what files to add to a commit, and mistakes happen all
 the time. We don’t want these mistakes to also be saved indefinitely.
 The good news is that we can undo any of the steps in the cycle.</p>
-<figure><img src="fig/git_restore_comparison_diagram.svg" alt="common git restore commands" class="figure mx-auto d-block"><div class="figcaption">common git restore commands</div>
+<figure><img src="fig/git_restore_comparison_diagram.svg" alt="Git restore commands." class="figure mx-auto d-block"><div class="figcaption">common git restore commands</div>
 </figure><p>Within the modify, add, commit cycle, we can undo any state changes
 and invert any command:</p>
 <p>We can undo modifications to a file and restore the version in the
@@ -1499,7 +1499,7 @@ previous commit using <code>git restore &lt;file&gt;</code></p>
 <p>We can unstage a file from the staging area while keeping the
 modification in the file system by doing
 <code>git restore --staged &lt;file&gt;</code></p>
-<figure><img src="fig/git_reset_comparison_diagram.svg" alt="Git reset diagram" class="figure mx-auto d-block"><div class="figcaption">Git reset diagram</div>
+<figure><img src="fig/git_reset_comparison_diagram.svg" alt="Git reset diagram showing file system changes using the 3 flags --soft, --mixed and --hard." class="figure mx-auto d-block"><div class="figcaption">Git reset diagram</div>
 </figure><p>Finally, if we are working locally, we can undo the commit. This is
 called rewriting the history, and it is important that we only do this
 if the commit is local and hasn’t been pushed to a remote, otherwise we
@@ -1574,7 +1574,7 @@ area.</p></li>
   Part 1
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Use the commands <code>git add &lt;file&gt;</code> to stage a file.
 Use <code>git status</code> to check it has been staged. Use
@@ -1591,7 +1591,7 @@ Use <code>git status</code> to check it has been staged. Use
   Part 2
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Modify the file then use <code>git add &lt;file&gt;</code> and
 <code>git commit -m "commit message"</code> to add a commit. Use
@@ -1608,7 +1608,7 @@ been added.</p>
   Part 3
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Initially same as Part 2. Then to inverse use
 <code>git reset --soft</code>.</p>
@@ -1623,7 +1623,7 @@ been added.</p>
   Part 4
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>Use <code>git commit -m "new commit message"</code>. Then to inverse
 and unstage <code>git reset --mixed</code>.</p>
@@ -1638,7 +1638,7 @@ and unstage <code>git reset --mixed</code>.</p>
   Part 5
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <p>Same as Part 2.</p>
 </div>
@@ -1652,7 +1652,7 @@ and unstage <code>git reset --mixed</code>.</p>
   Part 6
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
 <p>Use <code>git reset --hard</code>.</p>
 </div>
@@ -1844,7 +1844,7 @@ To https://github.com/alflin/recipes.git
  * [new branch]      main -&gt; main</code></pre>
 </div>
 <p>Our local and remote repositories are now in sync.</p>
-<figure><img src="fig/git_push_diagram.svg" alt="In the general no conflict case, a git push adds your new commits to your remote branch so they are in sync" class="figure mx-auto d-block"><div class="figcaption">In the general no conflict case, a git push adds
+<figure><img src="fig/git_push_diagram.svg" alt="Simple git push diagram." class="figure mx-auto d-block"><div class="figcaption">In the general no conflict case, a git push adds
 your new commits to your remote branch so they are in sync</div>
 </figure><div id="the--u-flag" class="callout">
 <div class="callout-square">
@@ -1882,14 +1882,14 @@ Already up-to-date.</code></pre>
 already synchronised. If someone else had pushed some changes to the
 repository on GitHub, though, this command would download them to our
 local repository.</p>
-<figure><img src="fig/git_pull_diagram.svg" alt="In the general no conflict case, a git pull adds its new commits to your local branch" class="figure mx-auto d-block"><div class="figcaption">In the general no conflict case, a git pull adds
+<figure><img src="fig/git_pull_diagram.svg" alt="Simple git pull diagram." class="figure mx-auto d-block"><div class="figcaption">In the general no conflict case, a git pull adds
 its new commits to your local branch</div>
 </figure><p>If you don’t want to necessarily add the commits, but you want to
 refresh your view of the remote branch, you can use
 <code>git fetch</code> instead. A <code>git pull</code> is actually just
 a <code>git fetch</code> followed by a <code>git merge</code>, which we
 will discuss later.</p>
-<figure><img src="fig/git_fetch_diagram.svg" alt="Git fetch updates the remote tracking branch. Here, origin/main moves to C4 and the local main branch is 2 commits behind" class="figure mx-auto d-block"><div class="figcaption">Git fetch updates the remote tracking branch.
+<figure><img src="fig/git_fetch_diagram.svg" alt="Simple git fetch diagram." class="figure mx-auto d-block"><div class="figcaption">Git fetch updates the remote tracking branch.
 Here, origin/main moves to C4 and the local main branch is 2 commits
 behind</div>
 </figure><div id="github-gui" class="callout challenge">
@@ -1913,7 +1913,7 @@ buttons? How would you get that same information in the shell?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>When you click on the left-most button, you’ll see all of the changes
 that were made in that particular commit. Green shaded lines indicate
@@ -1975,7 +1975,7 @@ GitHub record times, and why?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>GitHub displays timestamps in a human readable relative format
 (i.e. “22 hours ago” or “three weeks ago”). However, if you hover over
@@ -2003,7 +2003,7 @@ push” different from “git commit”?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>When we push changes, we’re interacting with a remote repository to
 update it with the changes we’ve made locally (often this corresponds to
@@ -2033,7 +2033,7 @@ happened when you tried to link your local and remote repositories?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>In this case, we’d see a merge conflict due to unrelated histories.
 When GitHub creates a README.md file, it performs a commit in the remote
@@ -3948,7 +3948,7 @@ finish.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 
 </div>
@@ -4023,7 +4023,7 @@ indeed the merge editor in your code editor of choice).</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 
 </div>
@@ -4182,7 +4182,7 @@ repository is easy to archive for perpetuity.</li>
 <div class="callout-content">
 <p>Anything that is hosted in a version control repository (data, code,
 papers, etc.) can be turned into a citable object. You’ll learn how to
-do this in <a href="12-citation.html">the later episode on
+do this in <a href="05-03-citation.html">the later episode on
 Citation</a>.</p>
 </div>
 </div>
@@ -4536,8 +4536,8 @@ work cited.</li>
 </div>
 </div>
 </div>
-<p>After <a href="11-licensing.html">choosing a license</a>, another big
-question for groups that want to open up their work is where to host
+<p>After <a href="05-02-licensing.html">choosing a license</a>, another
+big question for groups that want to open up their work is where to host
 their code and data. One option is for the lab, the department, or the
 university to provide a server, manage accounts and backups, and so on.
 The main benefit of this is that it clarifies who owns what, which is

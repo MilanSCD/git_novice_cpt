@@ -561,7 +561,7 @@ To https://github.com/alflin/recipes.git
  * [new branch]      main -&gt; main</code></pre>
 </div>
 <p>Our local and remote repositories are now in sync.</p>
-<figure><img src="fig/git_push_diagram.svg" alt="In the general no conflict case, a git push adds your new commits to your remote branch so they are in sync" class="figure mx-auto d-block"><div class="figcaption">In the general no conflict case, a git push adds
+<figure><img src="fig/git_push_diagram.svg" alt="Simple git push diagram." class="figure mx-auto d-block"><div class="figcaption">In the general no conflict case, a git push adds
 your new commits to your remote branch so they are in sync</div>
 </figure><div id="the--u-flag" class="callout">
 <div class="callout-square">
@@ -599,14 +599,14 @@ Already up-to-date.</code></pre>
 already synchronised. If someone else had pushed some changes to the
 repository on GitHub, though, this command would download them to our
 local repository.</p>
-<figure><img src="fig/git_pull_diagram.svg" alt="In the general no conflict case, a git pull adds its new commits to your local branch" class="figure mx-auto d-block"><div class="figcaption">In the general no conflict case, a git pull adds
+<figure><img src="fig/git_pull_diagram.svg" alt="Simple git pull diagram." class="figure mx-auto d-block"><div class="figcaption">In the general no conflict case, a git pull adds
 its new commits to your local branch</div>
 </figure><p>If you don’t want to necessarily add the commits, but you want to
 refresh your view of the remote branch, you can use
 <code>git fetch</code> instead. A <code>git pull</code> is actually just
 a <code>git fetch</code> followed by a <code>git merge</code>, which we
 will discuss later.</p>
-<figure><img src="fig/git_fetch_diagram.svg" alt="Git fetch updates the remote tracking branch. Here, origin/main moves to C4 and the local main branch is 2 commits behind" class="figure mx-auto d-block"><div class="figcaption">Git fetch updates the remote tracking branch.
+<figure><img src="fig/git_fetch_diagram.svg" alt="Simple git fetch diagram." class="figure mx-auto d-block"><div class="figcaption">Git fetch updates the remote tracking branch.
 Here, origin/main moves to C4 and the local main branch is 2 commits
 behind</div>
 </figure><div id="github-gui" class="callout challenge">
@@ -630,7 +630,7 @@ buttons? How would you get that same information in the shell?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>When you click on the left-most button, you’ll see all of the changes
 that were made in that particular commit. Green shaded lines indicate
@@ -692,7 +692,7 @@ GitHub record times, and why?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>GitHub displays timestamps in a human readable relative format
 (i.e. “22 hours ago” or “three weeks ago”). However, if you hover over
@@ -720,7 +720,7 @@ push” different from “git commit”?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>When we push changes, we’re interacting with a remote repository to
 update it with the changes we’ve made locally (often this corresponds to
@@ -750,7 +750,7 @@ happened when you tried to link your local and remote repositories?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>In this case, we’d see a merge conflict due to unrelated histories.
 When GitHub creates a README.md file, it performs a commit in the remote
