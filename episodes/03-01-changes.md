@@ -120,7 +120,7 @@ We can undo modifications to a file and restore the version in the previous comm
 
 We can unstage a file from the staging area while keeping the modification in the file system by doing `git restore --staged <file>`
 
-![Git reset diagram](fig/git_reset_comparison_diagram.svg)
+![Git reset diagram](fig/git_reset_comparison_diagram.svg){alt="Git reset diagram showing file system changes using the 3 flags --soft, --mixed and --hard."}
 
 Finally, if we are working locally, we can undo the commit. This is called rewriting the history, and it is important that we only do this if the commit is local and hasn't been pushed to a remote, otherwise we risk permanently changing the history for everyone and affecting their work.
 
