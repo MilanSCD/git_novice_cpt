@@ -18,14 +18,14 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-As an open source project, Software Carpentry relies on volunteers to create our lessons and includes a file named `LICENSE` or `LICENSE.txt` file in all public lesson repositories. This file is used to specify that all materials are freely available under the Creative Commons Attribution license. Without a file that clearly states under which license any public source code, manuscript or other creative works is being made available, the default copyright laws apply. To learn more about licensing and open source, you can read more about [Github's description of licenses] and the [legal grounds for open source licensing].
+As an open source project, Software Carpentry relies on volunteers to create our lessons and includes a file named `LICENSE` or `LICENSE.txt` file in all public lesson repositories. This file is used to specify that all materials are freely available under the Creative Commons Attribution license. Without a file that clearly states under which license any public source code, manuscript or other creative works is being made available, the default copyright laws apply. To learn more about licensing and open source, you can read more about [GitHub's description of licenses] and the [legal grounds for open source licensing].
 
 A license solves this problem by granting rights to others (the
 licensees) that they would otherwise not have. What rights are being
 granted under which conditions differs, often only slightly, from one
 license to another. In practice, a few licenses are by far the most
 popular, and [choosealicense.com](https://choosealicense.com/) will
-help you find a common license that suits your needs.  Important
+help you find a common license that suits your needs. Important
 considerations include:
 
 - Whether you want to address patent rights.
@@ -37,7 +37,7 @@ considerations include:
 Choosing a license that is in common use makes life easier for
 contributors and users, because they are more likely to already be
 familiar with the license and don't have to wade through a bunch of
-jargon to decide if they're ok with it.  The [Open Source
+jargon to decide if they're ok with it. The [Open Source
 Initiative](https://opensource.org/licenses) and [Free Software
 Foundation](https://www.gnu.org/licenses/license-list.html) both
 maintain lists of licenses which are good choices.
@@ -84,14 +84,14 @@ the licenses discussed in this session? How is it different?
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 [software-licensing]: https://doi.org/10.1371/journal.pcbi.1002598
-[Github's description of licenses]: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository
+[GitHub's description of licenses]: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository
 [legal grounds for open source licensing]: https://opensource.guide/legal/#are-public-github-projects-open-source
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 - The `LICENSE`, `LICENSE.md`, or `LICENSE.txt` file is often used in a repository to indicate how the contents of the repo may be used by others.
 - People who incorporate General Public License (GPL'd) software into their own software must make the derived software also open under the GPL license if they decide to share it; most other open licenses do not require this.
-- The Creative Commons family of licenses allow people to mix and match requirements and restrictions on attribution, creation of derivative works, further sharing, and commercialization.
+- The Creative Commons family of licenses allow people to mix and match requirements and restrictions on attribution, creation of derivative works, further sharing, and commercialisation.
 - People who are not lawyers should not try to write licenses from scratch.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::

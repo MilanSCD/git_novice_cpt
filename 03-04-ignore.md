@@ -198,7 +198,7 @@ Further, the discussion page has more detail on ignore rules.
 
 How would you ignore all `.png` files in your root directory except for
 `final.png`?
-Hint: Find out what `!` (the exclamation point operator) does
+Hint: Find out what `!` (the exclamation point operator) does.
 
 :::::::::::::::  solution
 
@@ -239,7 +239,7 @@ pictures/brownie
 
 How would you ignore all of the contents in the pictures folder, but not `pictures/pie`?
 
-Hint: think a bit about how you created an exception with the `!` operator
+Hint: Think a bit about how you created an exception with the `!` operator
 before.
 
 :::::::::::::::  solution
@@ -262,7 +262,7 @@ pictures/*              # ignore everything in pictures folder
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Ignoring all data Files in a Directory
+## Ignoring All Data Files in a Directory
 
 Assuming you have an empty .gitignore file, and given a directory structure that looks like:
 
@@ -293,7 +293,7 @@ The file `pictures/data/location/gps/info.txt` will not be ignored.
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Ignoring all data Files in the repository
+## Ignoring All Data Files in the Repository
 
 Let us assume you have many `.csv` files in different subdirectories of your repository.
 For example, you might have:
@@ -364,14 +364,14 @@ You want to keep them but you do not want to track them through `git`.
 
 3. You find that the file `log_01` is very important after all, add it to the tracked files without changing the `.gitignore` again.
 
-4. Discuss with your neighbor what other types of files could reside in your directory that you do not want to track and thus would exclude via `.gitignore`.
+4. Discuss with your neighbour what other types of files could reside in your directory that you do not want to track and thus would exclude via `.gitignore`.
 
 :::::::::::::::  solution
 
 ## Solution
 
-1. append either `log_*`  or  `log*`  as a new entry in your .gitignore
-2. track `log_01` using   `git add -f log_01`
+1. Append either `log_*` or `log*` as a new entry in your .gitignore.
+2. Track `log_01` using `git add -f log_01`.
   
   
 

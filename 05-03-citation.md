@@ -6,7 +6,7 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Make your work easy to cite
+- Make your work easy to cite.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 

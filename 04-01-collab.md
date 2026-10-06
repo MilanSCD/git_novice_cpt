@@ -18,14 +18,14 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-For the next step, get into pairs.  One person will be the "Owner" and the other
+For the next step, get into pairs. One person will be the "Owner" and the other
 will be the "Collaborator". The goal is that the Collaborator add changes into
 the Owner's repository. We will switch roles at the end, so both persons will
 play Owner and Collaborator.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
-## Practicing By Yourself
+## Practising By Yourself
 
 If you're working through this lesson on your own, you can carry on by opening
 a second terminal window.
@@ -113,7 +113,7 @@ To https://github.com/alflin/recipes.git
 ```
 
 Note that we didn't have to create a remote called `origin`: Git uses this
-name by default when we clone a repository.  (This is why `origin` was a
+name by default when we clone a repository. (This is why `origin` was a
 sensible choice earlier when we were setting up remotes by hand.)
 
 Take a look at the Owner's repository on GitHub again, and you should be
@@ -142,8 +142,8 @@ The `git remote` family of commands is used to set up and alter the remotes
 associated with a repository. Here are some of the most useful ones:
 
 - `git remote -v` lists all the remotes that are configured (we already used
-  this in the last episode)
-- `git remote add [name] [url]` is used to add a new remote
+  this in the last episode).
+- `git remote add [name] [url]` is used to add a new remote.
 - `git remote remove [name]` removes a remote. Note that it doesn't affect the
   remote repository at all - it just removes the link to it from the local repo.
 - `git remote set-url [name] [newurl]` changes the URL that is associated
@@ -181,7 +181,7 @@ Fast-forward
 Now the three repositories (Owner's local, Collaborator's local, and Owner's on
 GitHub) are back in sync.
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+:::::::::::::::::::::::::::::::::::::::::  challenge
 
 ## A Basic Collaborative Workflow
 
@@ -189,28 +189,33 @@ In practice, it is good to be sure that you have an updated version of the
 repository you are collaborating on, so you should `git pull` before making
 our changes. The basic collaborative workflow would be:
 
-- update your local repo with `git pull origin main`,
-- make your changes and stage them with `git add`,
-- commit your changes with `git commit -m`, and
-- upload the changes to GitHub with `git push origin main`
+- Update your local repo with `git pull origin main`,
+- Make your changes and stage them with `git add`,
+- Commit your changes with `git commit -m`, and
+- Upload the changes to GitHub with `git push origin main`
 
 It is better to make many commits with smaller changes rather than
 of one commit with massive changes: small commits are easier to
 read and review.
 
+:::solution
+:::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::::::challenge
 
 ## Switch Roles and Repeat
 
 Switch roles and repeat the whole process.
 
+:::solution
+
+:::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::::::challenge
 
 ## Review Changes
 
@@ -236,7 +241,7 @@ On GitHub, the Collaborator can go to the repository and click on
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::::::discussion
 
 ## Comment Changes in GitHub
 
@@ -251,7 +256,7 @@ The Collaborator posts her comments and suggestions using the GitHub interface.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::::::discussion
 
 ## Version History, Backup, and Version Control
 

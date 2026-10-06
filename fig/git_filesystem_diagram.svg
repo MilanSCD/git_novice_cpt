@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1760 860" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1760" height="860" fill="#f7f7f9"/>
+
+  <!-- File System: everything on disk for this project -->
+  <rect x="40" y="40" width="1680" height="780" rx="24" fill="#eef0f2" stroke="#6b7280" stroke-width="4"/>
+  <text x="80" y="105" font-size="40" font-weight="700" fill="#1f2937">File System</text>
+
+  <!-- Git Repository (.git): internal git storage -->
+  <rect x="100" y="160" width="750" height="620" rx="20" fill="#eef2ff" stroke="#4b5563" stroke-width="4"/>
+  <text x="140" y="215" font-size="28" font-weight="700" fill="#374151">Git Repository (.git)</text>
+
+  <!-- Working Directory: ordinary files git is watching or not -->
+  <rect x="910" y="160" width="750" height="620" rx="20" fill="#ffffff" stroke="#4b5563" stroke-width="4"/>
+  <text x="950" y="215" font-size="28" font-weight="700" fill="#374151">Working Directory</text>
+
+  <!-- HEAD -->
+  <rect x="195" y="270" width="560" height="160" rx="16" fill="#f5f0ff" stroke="#7c3aed" stroke-width="5"/>
+  <text x="475" y="345" text-anchor="middle" font-size="38" font-weight="700" fill="#5b21b6">HEAD</text>
+  <text x="475" y="388" text-anchor="middle" font-size="22" fill="#5b21b6">(points at last commit)</text>
+
+  <!-- Staged changes -->
+  <rect x="195" y="480" width="560" height="160" rx="16" fill="#eef5ff" stroke="#2f6fde" stroke-width="5" stroke-dasharray="14,10"/>
+  <text x="475" y="555" text-anchor="middle" font-size="34" font-weight="700" fill="#1f2937">Staged Changes</text>
+  <text x="475" y="598" text-anchor="middle" font-size="22" fill="#374151">(added, ready to commit)</text>
+
+  <!-- Unstaged changes -->
+  <rect x="1005" y="270" width="560" height="160" rx="16" fill="#fff7ed" stroke="#d97706" stroke-width="5" stroke-dasharray="14,10"/>
+  <text x="1285" y="345" text-anchor="middle" font-size="32" font-weight="700" fill="#92400e">Unstaged Changes</text>
+  <text x="1285" y="388" text-anchor="middle" font-size="22" fill="#92400e">(modified, not yet added)</text>
+
+  <!-- Untracked files -->
+  <rect x="1005" y="480" width="560" height="160" rx="16" fill="#f3f4f6" stroke="#9ca3af" stroke-width="5" stroke-dasharray="14,10"/>
+  <text x="1285" y="555" text-anchor="middle" font-size="34" font-weight="700" fill="#374151">Untracked Files</text>
+  <text x="1285" y="598" text-anchor="middle" font-size="22" fill="#4b5563">(unknown to git)</text>
+</svg>
