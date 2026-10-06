@@ -1,7 +1,7 @@
 ---
 title: 'SSH Setup'
-teaching: 10
-exercises: 2
+teaching: 15
+exercises: 0
 ---
 ::::::::::::::::::::::::::::::::::::::: objectives
 
