@@ -36,7 +36,7 @@ working in teams or not, because it is
 
 ## Teaching Notes
 
-- You can "split" your shell so that recent commands remain in view using [this](https://github.com/rgaiacs/swc-shell-split-window) script.
+- You can "split" your shell so that recent commands remain in view using [this split window script](https://github.com/rgaiacs/swc-shell-split-window).
 
 - Make sure the network is working *before* starting this lesson.
 
@@ -83,7 +83,7 @@ working in teams or not, because it is
   - [Code School][code-school] has a free interactive course, [Try Git][try-git].
   - for instructors, [the Git parable][git-parable] is useful background reading
 
-## [Automated Version Control](../episodes/01-basics.md)
+## [Automated Version Control](../episodes/01-01-basics.md)
 
 - Ask, "Who uses 'undo' in their editor?" All say "Me". 'Undo' is the simplest
   form of version control.
@@ -98,7 +98,7 @@ working in teams or not, because it is
   and, "come on this really has to be the last version" to motivate version
   control as a better way to collaborate and as a better way to back work up.
 
-## [Setting Up Git](../episodes/02-setup.md)
+## [Setting Up Git](../episodes/02-01-setup.md)
 
 - We suggest instructors and students use `nano` as the text editor for this
   lessons because
@@ -119,7 +119,7 @@ working in teams or not, because it is
   using `git branch -M main` if there are currently commits in the repository,
   or `git checkout -b main` if there are no commits/the repository is completely empty.
 
-## [Creating a Repository](../episodes/03-create.md)
+## [Creating a Repository](../episodes/02-02-create.md)
 
 - When you do `git status`, Mac users may see a `.DS_Store` file showing as
   untracked. This a file that Mac OS creates in each directory.
@@ -140,7 +140,7 @@ working in teams or not, because it is
   The challenge suggests that it is a bad idea to create a Git repo inside another repo.
   For more discussion on this topic, please see [this issue][repos-in-repos].
 
-## [Tracking Changes](../episodes/04-changes.md)
+## [Tracking Changes](../episodes/03-01-changes.md)
 
 - It's important that learners do a full commit cycle by themselves (make
   changes, `git diff`, `git add`, and `git commit`). The "`bio` repository"
@@ -158,16 +158,16 @@ working in teams or not, because it is
 - This is a good moment to show a log within a Git GUI. If you skip it
   because you're short on time, show it once in GitHub.
 
-## [Exploring History](../episodes/05-history.md)
+## [Exploring History](../episodes/03-03-history.md)
 
 - Git 2.23 (August 2019) added the `git restore` command as a clearer, more verbose replacement for the heavily overloaded `git checkout` when you wish to restore files into the working tree. The older style `git checkout -- file` does still work in newer versions of Git. This is an illustration of the fact that there are often multiple ways to do the same thing in Git.
 
-## [Ignoring Things](../episodes/06-ignore.md)
+## [Ignoring Things](../episodes/03-04-ignore.md)
 
 Just remember that you can use wildcards and regular expressions to ignore a
 particular set of files in `.gitignore`.
 
-## [Remotes in GitHub](../episodes/07-github.md)
+## [Remotes in GitHub](../episodes/03-02-backup.md)
 
 - Make it clear that Git and GitHub are not the same thing: Git is an open
   source version control tool, GitHub is a company that hosts Git
@@ -185,7 +185,7 @@ particular set of files in `.gitignore`.
   `git push -u origin main`, will have slightly different output, including
   the line `Branch main set up to track remote branch main from origin by rebasing.`
 
-## [Collaborating](../episodes/08-collab.md)
+## [Collaborating](../episodes/04-01-collab.md)
 
 - Decide in advance whether all the learners will work in one shared
   repository, or whether they will work in pairs (or other small groups) in
@@ -251,7 +251,7 @@ particular set of files in `.gitignore`.
 - Learners may have slightly different output from `git push` and `git pull`
   depending on the version of git, and if upstream (`-u`) is used.
 
-## [Conflicts](../episodes/09-conflict.md)
+## [Conflicts](../episodes/04-02-branching.md)
 
 - Expect the learners to make mistakes. Expect *yourself* to make mistakes.
   This happens because it is late in the lesson and everyone is tired.
@@ -279,9 +279,9 @@ particular set of files in `.gitignore`.
 - Keep in mind that depending on the Git version used, the outputs for
   `git push` and `git pull` can vary slightly.
 
-## [Open Science](../episodes/10-open.md)
+## [Open Science](../episodes/05-01-open.md)
 
-## [Licensing](../episodes/11-licensing.md)
+## [Licensing](../episodes/05-02-licensing.md)
 
 We teach about licensing because questions about who owns what, or can use
 what, arise naturally once we start talking about using public services like
@@ -293,9 +293,9 @@ works (including software documentation and images used in software) but not
 software itself. Creative Commons [recommends][cc-faq-software] a
 software-specific license instead.
 
-## [Citation](../episodes/12-citation.md)
+## [Citation](../episodes/05-03-citation.md)
 
-## [Hosting](../episodes/13-hosting.md)
+## [Hosting](../episodes/05-04-hosting.md)
 
 A common concern for learners is having their work publicly available on
 GitHub.  While we encourage open science, sometimes private repos are the

@@ -16,7 +16,7 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-After [choosing a license](11-licensing.md),
+After [choosing a license](05-02-licensing.md),
 another big question for groups that want to open up their work is where to
 host their code and data. One option is for the lab, the department, or the
 university to provide a server, manage accounts and backups, and so on. The

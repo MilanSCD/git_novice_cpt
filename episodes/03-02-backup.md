@@ -141,7 +141,7 @@ To https://github.com/alflin/recipes.git
 
 Our local and remote repositories are now in sync.
 
-![In the general no conflict case, a git push adds your new commits to your remote branch so they are in sync](fig/git_push_diagram.svg)
+![In the general no conflict case, a git push adds your new commits to your remote branch so they are in sync](fig/git_push_diagram.svg){alt="Simple git push diagram."}
 
 
 :::::::::::::::::::::::::::::::::::::::::  callout
@@ -173,12 +173,12 @@ Pulling has no effect in this case because the two repositories are already
 synchronised. If someone else had pushed some changes to the repository on
 GitHub, though, this command would download them to our local repository.
 
-![In the general no conflict case, a git pull adds its new commits to your local branch](fig/git_pull_diagram.svg)
+![In the general no conflict case, a git pull adds its new commits to your local branch](fig/git_pull_diagram.svg){alt="Simple git pull diagram."}
 
 If you don't want to necessarily add the commits, but you want to refresh your view of the remote branch, you can use `git fetch` instead.
 A `git pull` is actually just a `git fetch` followed by a `git merge`, which we will discuss later.
 
-![Git fetch updates the remote tracking branch. Here, origin/main moves to C4 and the local main branch is 2 commits behind](fig/git_fetch_diagram.svg)
+![Git fetch updates the remote tracking branch. Here, origin/main moves to C4 and the local main branch is 2 commits behind](fig/git_fetch_diagram.svg){alt="Simple git fetch diagram."}
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
