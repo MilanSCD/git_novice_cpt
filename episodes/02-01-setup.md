@@ -1,6 +1,6 @@
 ---
 title: Setting Up Git
-teaching: 5
+teaching: 10
 exercises: 0
 ---
 
