@@ -110,7 +110,7 @@ please check that they're covered by an open source license before you clone the
 
 ## Non-text Files
 
-Recall when we discussed [Conflicts](../episodes/04-02-conflict.md)
+Recall when we discussed [Conflicts](../episodes/04-02-branching.md)
 there was a challenge that asked,
 "What does Git do
 when there is a conflict in an image or some other non-textual file
